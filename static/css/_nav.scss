@@ -1,0 +1,25 @@
+nav {
+    background: $white;
+    padding: 0 2rem;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: $black;
+}
+
+.logo {
+    font-size: 2.25rem; //36px
+    font-family: $spacemono;
+    font-weight: $bold;
+}
+
+.item {
+    font-size: $p;
+    font-family: $roboto;
+    font-weight: $regular;
+}

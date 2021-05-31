@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+body {
+  word-wrap: break-word;
+}
+
+nav {
+  background: #FFF;
+  padding: 0 2rem;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2A2A2A;
+}
+
+.logo {
+  font-size: 2.25rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.item {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */
