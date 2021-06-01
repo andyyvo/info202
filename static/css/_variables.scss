@@ -6,9 +6,10 @@ $roboto: 'Roboto', sans-serif;
 
 // Font Sizes
 
-$h1: 4.5rem; //72px big text for landing
+$h1: 3.5rem; //56px big text for landing
 $h2: 3rem; //48px headers for sections
-$h3: 0.875rem; //14px subtitles
+$h3: 2.25rem; //36px
+$h4: 0.875rem; //14px subtitles
 $p: 1.125rem; //18px text
 
 
@@ -23,3 +24,9 @@ $regular: 400;
 $white: #FFF;
 $black: #2A2A2A;
 $blue: #3D75B7;
+
+$highlightGreen: #0ACF83;
+$highlightBlue: #1ABCFE;
+$highlightPurple: #A259FF;
+$highlightYellow: #FCCC63;
+$highlightRed: #FF7262;

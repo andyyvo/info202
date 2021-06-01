@@ -9,3 +9,15 @@
 body {
     overflow-x: hidden;
 }
+
+h1 {
+    font-family: $spacemono;
+    font-size: $h1;
+    font-weight: $bold;
+}
+
+p {
+    font-family: $roboto;
+    font-size: $p;
+    font-weight: $regular;
+}
