@@ -1,25 +1,118 @@
 nav {
-    background: $white;
-    padding: 0 2rem;
+    min-height: 80px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
 }
 
-.menu {
-    list-style-type: none;
+nav li {
+    list-style: none;
+    font-family: $roboto;
+    font-size: $p;
+    font-weight: $regular;
 }
 
-nav a {
+nav a, nav a:visited {
     text-decoration: none;
     color: $black;
 }
 
-.logo {
-    font-size: 2.25rem; //36px
-    font-family: $spacemono;
+.menu li a {
+    transition: all 200ms ease-in;
+}
+
+.menu li a:hover, .menu li a:focus {
+    color: $blue;
+}
+
+.item.active {
     font-weight: $bold;
 }
 
-.item {
-    font-size: $p;
-    font-family: $roboto;
-    font-weight: $regular;
+.logo {
+    font-family: $spacemono;
+    font-size: 2.25rem; //36px
+    font-weight: $bold;
 }
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 40px;
+    height: 4px;
+    background-color: $black;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+// mobile and tablet nav
+@media screen and (max-width: 1023px) {
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        top: 10vh;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .menu li {
+        opacity: 0;
+    }
+    .menu li a {
+        color: $white;
+        font-weight: $bold;
+        text-decoration: none;
+        transition: all 300ms ease-in;
+    }
+    .menu li a:hover, .menu li a:focus {
+        color: $white;
+        text-decoration: underline;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .hamburgerline1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .hamburgerline2 {
+    opacity: 0;
+}
+
+.toggle .hamburgerline3 {
+    transform: rotate(45deg) translate(-6px,-7px);
+}
+
+// shoutout https://www.youtube.com/watch?v=gXkqy0b4M5g&list=RDCMUClb90NQQcskPUGDIXsQEz5Q&index=3

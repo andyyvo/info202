@@ -7,32 +7,122 @@
 }
 
 body {
-  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 nav {
-  background: #FFF;
-  padding: 0 2rem;
+  min-height: 80px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFF;
 }
 
-.menu {
-  list-style-type: none;
+nav li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
-nav a {
+nav a, nav a:visited {
   text-decoration: none;
   color: #2A2A2A;
 }
 
-.logo {
-  font-size: 2.25rem;
-  font-family: "Space Mono", monospace;
+.menu li a {
+  transition: all 200ms ease-in;
+}
+
+.menu li a:hover, .menu li a:focus {
+  color: #3D75B7;
+}
+
+.item.active {
   font-weight: 700;
 }
 
-.item {
-  font-size: 1.125rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+.logo {
+  font-family: "Space Mono", monospace;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 40px;
+  height: 4px;
+  background-color: #2A2A2A;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 10vh;
+    background-color: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .menu li {
+    opacity: 0;
+  }
+  .menu li a {
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 300ms ease-in;
+  }
+  .menu li a:hover, .menu li a:focus {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .hamburgerline1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .hamburgerline2 {
+  opacity: 0;
+}
+
+.toggle .hamburgerline3 {
+  transform: rotate(45deg) translate(-6px, -7px);
 }
 /*# sourceMappingURL=main.css.map */
