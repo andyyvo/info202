@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: 88vh;
+  height: 90vh;
   max-height: 90vh;
   padding: 0 5rem 5rem;
   display: flex;
@@ -40,12 +40,161 @@
   border-right: 0.2rem solid #2A2A2A;
 }
 
+.scrollDown {
+  position: absolute;
+  font-size: 2rem;
+  color: #DAE5F1;
+  bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: chevronFade 2s ease-in-out infinite;
+}
+
+.scrollDown a, .scrollDown a:visited {
+  text-decoration: none;
+  color: #DAE5F1;
+}
+
+@keyframes chevronFade {
+  0% {
+    opacity: 0;
+    bottom: 50px;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .scrollDown {
+    display: none;
+  }
+  .hero {
+    display: block;
+  }
+  .hero_text, .hero_subtext {
+    width: 100%;
+  }
+  .hero_img {
+    margin-top: 2rem;
+  }
+  .hero_img img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .hero_img img {
+    max-width: 65%;
+  }
+}
+
+.casestudy {
+  background-color: #FFF;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#study1 {
+  background-image: url(/images/casestudy_bucsa.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  pointer-events: none;
+}
+
+#study2 {
+  background-image: url(/images/casestudy_bumpcall.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  pointer-events: none;
+}
+
+.casestudy_info {
+  pointer-events: all;
+  position: absolute;
+  width: 40vw;
+  height: 100%;
+  padding: 5% 8%;
+}
+
+#study1_card {
+  background-color: #1A1A1A;
+  color: #FFF;
+}
+
+#study2_card {
+  background-color: #FF6B00;
+  color: #FFF;
+}
+
+.casestudy_info_card_padding {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.casestudy_info_card *:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.casestudy_btn {
+  background-color: transparent;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  padding: 1rem 1.75rem;
+  text-align: center;
+  display: inline-block;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.casestudy_btn:hover, .casestudy_btn:focus {
+  background-color: #FFF;
+  color: #2A2A2A;
+  box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.25);
+}
+
+.casestudy_btn:hover h5, .casestudy_btn:focus h5 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1023px) {
+  .casestudy_info {
+    width: 100%;
+  }
+  #study1_card {
+    background-color: rgba(26, 26, 26, 0.85);
+  }
+  #study2_card {
+    background-color: rgba(255, 107, 0, 0.7);
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   min-width: 0;
   min-height: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +205,37 @@ h1 {
   font-family: "Space Mono", monospace;
   font-size: 3.5rem;
   font-weight: 700;
+}
+
+h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Space Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 p {
@@ -71,6 +251,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: #FFF;
+  gap: 40rem;
+  padding: 0 5%;
 }
 
 nav li {
@@ -80,7 +262,12 @@ nav li {
   font-weight: 400;
 }
 
-nav a, nav a:visited {
+nav li a, nav li a:visited {
+  text-decoration: none;
+  color: #93A3B7;
+}
+
+nav .logo a, nav .logo a:visited {
   text-decoration: none;
   color: #2A2A2A;
 }
@@ -97,16 +284,21 @@ nav a, nav a:visited {
   font-weight: 700;
 }
 
+.item.active a {
+  color: #2A2A2A;
+}
+
 .logo {
   font-family: "Space Mono", monospace;
   font-size: 2.25rem;
   font-weight: 700;
+  width: 40%;
 }
 
 .menu {
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 30%;
 }
 
 .hamburger {
@@ -123,6 +315,12 @@ nav a, nav a:visited {
 }
 
 @media screen and (max-width: 1023px) {
+  nav {
+    gap: 0;
+  }
+  .logo {
+    width: 100%;
+  }
   .menu {
     position: absolute;
     width: 100%;

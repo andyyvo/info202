@@ -5,6 +5,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: $white;
+    gap: 40rem;
+    padding: 0 5%;
 }
 
 nav li {
@@ -14,7 +16,12 @@ nav li {
     font-weight: $regular;
 }
 
-nav a, nav a:visited {
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: $gray;
+}
+
+nav .logo a, nav .logo a:visited {
     text-decoration: none;
     color: $black;
 }
@@ -29,18 +36,22 @@ nav a, nav a:visited {
 
 .item.active {
     font-weight: $bold;
+    a {
+        color: $black;
+    }
 }
 
 .logo {
     font-family: $spacemono;
     font-size: 2.25rem; //36px
     font-weight: $bold;
+    width: 40%;
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 30%;
 }
 
 .hamburger {
@@ -58,6 +69,12 @@ nav a, nav a:visited {
 
 // mobile and tablet nav
 @media screen and (max-width: 1023px) {
+    nav {
+        gap: 0;
+    }
+    .logo {
+        width: 100%;
+    }
     .menu {
         position: absolute;
         width: 100%;
@@ -114,5 +131,3 @@ nav a, nav a:visited {
 .toggle .hamburgerline3 {
     transform: rotate(45deg) translate(-6px,-7px);
 }
-
-// shoutout https://www.youtube.com/watch?v=gXkqy0b4M5g&list=RDCMUClb90NQQcskPUGDIXsQEz5Q&index=3
