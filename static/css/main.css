@@ -121,6 +121,24 @@
   pointer-events: none;
 }
 
+#study3 {
+  background-image: url(/images/casestudy_wasteless.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  pointer-events: none;
+}
+
+#study4 {
+  background-image: url(/images/casestudy_productvision.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  pointer-events: none;
+}
+
 .casestudy_info {
   pointer-events: all;
   position: absolute;
@@ -136,6 +154,16 @@
 
 #study2_card {
   background-color: #FF6B00;
+  color: #FFF;
+}
+
+#study3_card {
+  background-color: rgba(135, 209, 241, 0.9);
+  color: #FFF;
+}
+
+#study4_card {
+  background-color: #2F4790;
   color: #FFF;
 }
 
@@ -180,7 +208,13 @@
     background-color: rgba(26, 26, 26, 0.85);
   }
   #study2_card {
-    background-color: rgba(255, 107, 0, 0.7);
+    background-color: rgba(255, 107, 0, 0.8);
+  }
+  #study3_card {
+    background-color: rgba(135, 209, 241, 0.9);
+  }
+  #study4_card {
+    background-color: rgba(47, 71, 144, 0.8);
   }
 }
 
@@ -376,5 +410,44 @@ nav .logo a, nav .logo a:visited {
 
 .toggle .hamburgerline3 {
   transform: rotate(45deg) translate(-6px, -7px);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 12vh;
+  background-color: #2A2A2A;
+  color: #FFF;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo {
+  width: auto;
+}
+
+footer a, footer a:visited {
+  text-decoration: none;
+  color: #FFF;
+  font-feature-settings: "calt" 0;
+}
+
+.socials, .social_link {
+  transition: all 200ms ease-in;
+}
+
+.socials:hover {
+  color: #93A3B7;
+}
+
+.socials:hover a {
+  color: #93A3B7;
+}
+
+.socials:hover .social_link:hover {
+  color: #FFF;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
