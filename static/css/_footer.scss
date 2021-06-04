@@ -35,3 +35,12 @@ footer a, footer a:visited {
         text-decoration: underline;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    footer .logo {
+        font-size: $h4;
+    }
+    .socials, .social_link, .socials p, footer p {
+        font-size: $h5;
+    }
+}

@@ -5,6 +5,7 @@
   padding: 0 5rem 5rem;
   display: flex;
   align-items: flex-end;
+  z-index: 2;
 }
 
 .hero_text {
@@ -110,6 +111,7 @@
   background-size: cover;
   background-position: right;
   pointer-events: none;
+  z-index: 2;
 }
 
 #study2 {
@@ -119,6 +121,7 @@
   background-size: cover;
   background-position: right;
   pointer-events: none;
+  z-index: 2;
 }
 
 #study3 {
@@ -128,6 +131,7 @@
   background-size: cover;
   background-position: right;
   pointer-events: none;
+  z-index: 2;
 }
 
 #study4 {
@@ -137,6 +141,19 @@
   background-size: cover;
   background-position: right;
   pointer-events: none;
+  z-index: 2;
+}
+
+#study5 {
+  background-color: #FFC100;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  pointer-events: none;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .casestudy_info {
@@ -164,6 +181,11 @@
 
 #study4_card {
   background-color: #2F4790;
+  color: #FFF;
+}
+
+#study5_card {
+  background-color: #FFA09E;
   color: #FFF;
 }
 
@@ -200,6 +222,37 @@
   font-weight: 700;
 }
 
+.casestudy_unwrap_pic {
+  position: absolute;
+  display: block;
+}
+
+.casestudy_unwrap_pic img {
+  width: 36rem;
+  height: auto;
+}
+
+.unwrap_phone1 {
+  top: 2%;
+  left: 56%;
+}
+
+.unwrap_phone2 {
+  top: 4%;
+  left: 27%;
+}
+
+.unwrap_phone3 {
+  top: 50%;
+  left: 57%;
+}
+
+@media screen and (min-width: 1600px) {
+  .casestudy_unwrap_pic > img {
+    width: 50rem;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .casestudy_info {
     width: 100%;
@@ -215,6 +268,16 @@
   }
   #study4_card {
     background-color: rgba(47, 71, 144, 0.8);
+  }
+  #study5 {
+    background-image: url(/images/casestudy_unwrap.png);
+    z-index: 2;
+  }
+  #study5 .casestudy_unwrap_pic, #study5 .unwrap_phone1, #study5 .unwrap_phone2, #study5 .unwrap_phone3 {
+    display: none;
+  }
+  #study5_card {
+    background-color: rgba(255, 160, 158, 0.8);
   }
 }
 
@@ -449,5 +512,14 @@ footer a, footer a:visited {
 .socials:hover .social_link:hover {
   color: #FFF;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1023px) {
+  footer .logo {
+    font-size: 1.5rem;
+  }
+  .socials, .social_link, .socials p, footer p {
+    font-size: 0.875rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
