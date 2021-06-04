@@ -22,16 +22,17 @@ footer a, footer a:visited {
 .copyright {
     text-align: center;
     p {
-        font-size: $h4;
+        font-size: $h5;
     }
 }
 
 .copyright_text {
     font-family: $spacemono;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .socials {
+    margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,8 +68,5 @@ footer a, footer a:visited {
 @media screen and (max-width: 1023px) {
     footer .logo {
         font-size: $h4;
-    }
-    .copyright p {
-        font-size: 2vw;
     }
 }
