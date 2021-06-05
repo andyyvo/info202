@@ -6,6 +6,7 @@
   display: flex;
   align-items: flex-end;
   z-index: 2;
+  background-color: #FFF;
 }
 
 .hero_text {
@@ -281,6 +282,136 @@
   }
 }
 
+.about {
+  width: 100%;
+  height: auto;
+  padding: 5rem 5rem 10rem 5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 4vw;
+}
+
+.about_text {
+  flex: 3;
+  color: #2A2A2A;
+}
+
+.about_text p {
+  padding-right: 8vw;
+}
+
+.about_text p a {
+  text-decoration: none;
+  color: #2A2A2A;
+  transition: color 150ms ease-in;
+}
+
+.about_text p a:hover {
+  color: #3D75B7;
+}
+
+.about_img {
+  position: relative;
+  flex: 2;
+}
+
+.about_img img {
+  transition: opacity 100ms ease-in;
+}
+
+.behind_image {
+  position: absolute;
+  width: 384px;
+  height: 512px;
+  border: 2px solid #3D75B7;
+  z-index: -1;
+  transition: all 200ms ease-out;
+}
+
+.behind_image.bi1 {
+  background-color: #3D75B7;
+  top: 20px;
+  right: -20px;
+}
+
+.behind_image.bi2 {
+  top: -20px;
+  right: 20px;
+}
+
+.about_img > img, .about_img > video {
+  width: 384px;
+  height: 512px;
+}
+
+.about_img > img:hover {
+  opacity: 0;
+}
+
+.about_img:hover .behind_image.bi1 {
+  top: -20px;
+  right: 20px;
+}
+
+.about_img:hover .behind_image.bi2 {
+  top: 20px;
+  right: -20px;
+}
+
+.before_image, .after_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 252px;
+  min-height: 336px;
+}
+
+.before_image {
+  z-index: 2;
+}
+
+.after_image {
+  z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .about {
+    flex-direction: column;
+  }
+  .about_img {
+    margin-bottom: 45vh;
+  }
+  .before_image, .after_image {
+    left: 0;
+  }
+  .about_img > img, .about_img > video {
+    width: 252px;
+    height: 336px;
+  }
+  .behind_image {
+    width: 252px;
+    height: 336px;
+  }
+  .behind_image.bi1 {
+    background-color: #3D75B7;
+    top: 20px;
+    left: 20px;
+  }
+  .behind_image.bi2 {
+    top: -20px;
+    left: -20px;
+  }
+  .about_img:hover .behind_image.bi1 {
+    top: -20px;
+    left: -20px;
+  }
+  .about_img:hover .behind_image.bi2 {
+    top: 20px;
+    left: 20px;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -429,6 +560,7 @@ nav .logo a, nav .logo a:visited {
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index: 5;
   }
   .menu li {
     opacity: 0;
@@ -446,10 +578,14 @@ nav .logo a, nav .logo a:visited {
   .hamburger {
     display: block;
   }
+  .item.active a {
+    color: #FFF;
+  }
 }
 
 .nav-active {
   transform: translateX(0%);
+  z-index: 5;
 }
 
 @keyframes navLinkFade {

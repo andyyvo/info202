@@ -1,0 +1,126 @@
+.about {
+    width: 100%;
+    height: auto;
+    padding: 5rem 5rem 10rem 5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+.about_text {
+    flex: 3;
+    color: $black;
+    p {
+        padding-right: 8vw;
+        a {
+            text-decoration: none;
+            color: $black;
+            transition: color 150ms ease-in;
+        }
+        a:hover {
+            color: $blue;
+        }
+    }
+}
+
+.about_img {
+    position: relative;
+    flex: 2;
+    img {
+        transition: opacity 100ms ease-in;
+    }
+}
+
+.behind_image {
+    position: absolute;
+    width: 384px;
+    height: 512px;
+    border: 2px solid $blue;
+    z-index: -1;
+    transition: all 200ms ease-out;
+    &.bi1 {
+        background-color: $blue;
+        top: 20px;
+        right: -20px;
+    }
+    &.bi2 {
+        top: -20px;
+        right: 20px;
+    }
+}
+
+.about_img > img, .about_img > video {
+    width: 384px;
+    height: 512px;
+}
+
+.about_img > img:hover {
+    opacity: 0;
+}
+
+.about_img:hover {
+    .behind_image.bi1 {
+        top: -20px;
+        right: 20px;
+    }
+    .behind_image.bi2 {
+        top: 20px;
+        right: -20px;
+    }
+}
+
+.before_image, .after_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 252px;
+    min-height: 336px;
+}
+
+.before_image {
+    z-index: 2;
+}
+
+.after_image {
+    z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+    .about {
+        flex-direction: column;
+    }
+    .about_img {
+        margin-bottom: 45vh;
+    }
+    .before_image, .after_image {
+        left: 0;
+    }
+    .about_img > img, .about_img > video {
+        width: 252px;
+        height: 336px;
+    }
+    .behind_image {
+        width: 252px;
+        height: 336px;
+        &.bi1 {
+            background-color: $blue;
+            top: 20px;
+            left: 20px;
+        }
+        &.bi2 {
+            top: -20px;
+            left: -20px;
+        }
+    }
+    .about_img:hover {
+        .behind_image.bi1 {
+            top: -20px;
+            left: -20px;
+        }
+        .behind_image.bi2 {
+            top: 20px;
+            left: 20px;
+        }
+    }
+}
