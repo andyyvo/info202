@@ -30,7 +30,7 @@ nav .logo a, nav .logo a:visited {
     transition: all 200ms ease-in;
 }
 
-.menu li a:hover, .menu li a:focus {
+.menu li a:hover, .menu li a:active {
     color: $blue;
 }
 
