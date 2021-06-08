@@ -11,10 +11,12 @@
 
 .hero_text {
   width: 45vw;
+  color: #2A2A2A;
 }
 
 .hero_subtext {
   width: 32vw;
+  color: #3D3D3D;
 }
 
 .hero_img {
@@ -348,16 +350,20 @@
 
 .about_text {
   flex: 3;
+}
+
+.about_text h2 {
   color: #2A2A2A;
 }
 
 .about_text p {
+  color: #3D3D3D;
   padding-right: 8vw;
 }
 
 .about_text p a {
   text-decoration: none;
-  color: #2A2A2A;
+  color: #3D3D3D;
   transition: color 150ms ease-in;
 }
 
@@ -429,6 +435,66 @@
   z-index: 1;
 }
 
+.about_community {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  padding: 5rem 10rem 10rem 10rem;
+  color: #2A2A2A;
+}
+
+.about_com_header {
+  margin-bottom: 5rem;
+}
+
+.about_com_card {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_com_card_info {
+  flex: 1;
+}
+
+.about_com_card_info a {
+  text-decoration: none;
+  color: #3D75B7;
+  transition: color 150ms ease-in;
+}
+
+.about_com_card_info a:hover {
+  color: #1ABCFE;
+}
+
+.about_com_card_info h5, .about_com_card_info p {
+  color: #3D3D3D;
+}
+
+.about_img_section {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_img_indiv {
+  flex: 1 1 calc(25% - 10px);
+  margin: 5px;
+}
+
+.about_img_indiv img {
+  width: 100%;
+  height: auto;
+  transition: all 350ms ease-in-out;
+}
+
+.about_img_indiv img:hover {
+  transform: scale(115%);
+  box-shadow: 0px 10px 15px rgba(42, 42, 42, 0.35);
+}
+
 @media screen and (max-width: 1023px) {
   .about {
     flex-direction: column;
@@ -456,6 +522,9 @@
     top: -20px;
     left: -20px;
   }
+  .about_community {
+    padding: 5rem 5rem 10rem 5rem;
+  }
   .about_img:hover .behind_image.bi1 {
     top: -20px;
     left: -20px;
@@ -463,6 +532,15 @@
   .about_img:hover .behind_image.bi2 {
     top: 20px;
     left: 20px;
+  }
+  .about_com_card {
+    flex-direction: column;
+  }
+  .paragraph_text {
+    margin-top: 2rem;
+  }
+  .about_img_indiv {
+    flex: 1 1 calc(50% - 10px);
   }
 }
 
@@ -668,7 +746,7 @@ nav .logo a, nav .logo a:visited {
 footer {
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   background-color: #2A2A2A;
   color: #FFF;
   padding: 3rem 5% 0;
