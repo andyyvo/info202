@@ -31,165 +31,167 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <!-- andy vo html tag logo -->
-        <div class="logo">
-            <a href="#">&lt;Andy Vo&gt;</a>
-        </div>
-        <div class="hamburger">
-            <div class="hamburgerline1"></div>
-            <div class="hamburgerline2"></div>
-            <div class="hamburgerline3"></div>
-        </div>
-        <ul class="menu">
-            <li class="item active"><a href="#">Work</a></li>
-            <li class="item"><a href="/static/html/about.html">About</a></li>
-            <li class="item"><a href="https://drive.google.com/file/d/1HP8prJd6R01wwfnDkQSsgNcVoF7IT9ij/view?usp=sharing" target="_blank">Resume</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="hero">
-            <div class="hero_text">
-                <h1>Hello! I’m Andy 👋</h1>
-                <br>
-                <div class="hero_subtext">
-                    <p>I’m a product designer studying at Boston University bringing users together through accessible design.</p>
+    <div class="wrapper">
+        <nav>
+            <!-- andy vo html tag logo -->
+            <div class="logo">
+                <a href="#">&lt;Andy Vo&gt;</a>
+            </div>
+            <div class="hamburger">
+                <div class="hamburgerline1"></div>
+                <div class="hamburgerline2"></div>
+                <div class="hamburgerline3"></div>
+            </div>
+            <ul class="menu">
+                <li class="item active"><a href="#">Work</a></li>
+                <li class="item"><a href="/static/html/about.html">About</a></li>
+                <li class="item"><a href="https://drive.google.com/file/d/1HP8prJd6R01wwfnDkQSsgNcVoF7IT9ij/view?usp=sharing" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <section class="hero">
+                <div class="hero_text">
+                    <h1>Hello! I’m Andy 👋</h1>
                     <br>
-                    <!-- animated typewriter effect for fun -->
-                    <p>Find me <span class="typewriter" data-wait="3000" data-words='["climbing trees!", "programming web and mobile apps!", "turning imagination into creation!", "cooking for my food insta!", "exploring Figma, Boston, and the world!"]'></span></p>
+                    <div class="hero_subtext">
+                        <p>I’m a product designer studying at Boston University bringing users together through accessible design.</p>
+                        <br>
+                        <!-- animated typewriter effect for fun -->
+                        <p>Find me <span class="typewriter" data-wait="3000" data-words='["climbing trees!", "programming web and mobile apps!", "turning imagination into creation!", "cooking for my food insta!", "exploring Figma, Boston, and the world!"]'></span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="hero_img">
-                <img src="/images/full_tree.svg" type="image/svg" alt="Andy Vo Connected Tree">
-            </div>
-            <!-- click to scroll to first casestudy -->
-            <div class="scrollDown"><a href="#study1"><i class="fas fa-angle-double-down"></i></a></div>
-        </section>
+                <div class="hero_img">
+                    <img src="/images/full_tree.svg" type="image/svg" alt="Andy Vo Connected Tree">
+                </div>
+                <!-- click to scroll to first casestudy -->
+                <div class="scrollDown"><a href="#study1"><i class="fas fa-angle-double-down"></i></a></div>
+            </section>
+            
+            <!-- current works -->
+            <section class="current">
+                <div class="current_pic">
+                    <img src="/images/spark-logo-round.png" type="image/png" alt="BU Spark! logo">
+                </div>
+                <div class="current_info">
+                    <h4 class="current_co">BU Spark!</h4>
+                    <h5>User Experience Design Intern</h5>
+                    <h2>Shaping Journalism Through Accessibility and Visualization</h2>
+                    <p>Currently In Progress.</p>
+                </div>
+            </section>
+    
+            <!-- bucsambassadors -->
+            <section class="casestudy" id="study1">
+                <div class="casestudy_info" id="study1_card">
+                    <h4>BU CS Ambassadors</h4>
+                    <div class="casestudy_info_card_padding">
+                        <div class="casestudy_info_card">
+                            <h5 class="casestudy_position">Freelance Web Developer</h5>
+                            <h2 class="casestudy_title">Redesigning the Face of CS @ BU</h2>
+                            <p class="casestudy_summary">In a web design competition, I redefined the club’s branding to not only appeal to modern design practices but also to incoming collegiate freshmen looking for an inclusive, supporting community.</p>
+                            <button class="casestudy_btn" type="button" id="casestudy_bucsa"><h5>Read Case Study</h5></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         
-        <!-- current works -->
-        <section class="current">
-            <div class="current_pic">
-                <img src="/images/spark-logo-round.png" type="image/png" alt="BU Spark! logo">
-            </div>
-            <div class="current_info">
-                <h4 class="current_co">BU Spark!</h4>
-                <h5>User Experience Design Intern</h5>
-                <h2>Shaping Journalism Through Accessibility and Visualization</h2>
-                <p>Currently In Progress.</p>
-            </div>
-        </section>
-
-        <!-- bucsambassadors -->
-        <section class="casestudy" id="study1">
-            <div class="casestudy_info" id="study1_card">
-                <h4>BU CS Ambassadors</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Freelance Web Developer</h5>
-                        <h2 class="casestudy_title">Redesigning the Face of CS @ BU</h2>
-                        <p class="casestudy_summary">In a web design competition, I redefined the club’s branding to not only appeal to modern design practices but also to incoming collegiate freshmen looking for an inclusive, supporting community.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_bucsa"><h5>Read Case Study</h5></button>
+            <!-- bumpcall -->
+            <section class="casestudy" id="study2">
+                <div class="casestudy_info" id="study2_card">
+                    <h4>bumpcall</h4>
+                    <div class="casestudy_info_card_padding">
+                        <div class="casestudy_info_card">
+                            <h5 class="casestudy_position">Director of Product Design, Digital Designer Intern</h5>
+                            <h2 class="casestudy_title">A New Way to Stay In Touch</h2>
+                            <p class="casestudy_summary">From intern to director at a start-up company, I led the creative team through product design iterations, redesigning mobile app screens and forging brand identity.</p>
+                            <button class="casestudy_btn" type="button" id="casestudy_bumpcall"><h5>Read Case Study</h5></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        
+            <!-- hoya hacks 2021 -> go into more hacks in Work -->
+            <section class="casestudy" id="study3">
+                <div class="casestudy_info" id="study3_card">
+                    <h4>Hoya Hacks 2021</h4>
+                    <div class="casestudy_info_card_padding">
+                        <div class="casestudy_info_card">
+                            <h5 class="casestudy_position">Hackathon Participant, UX Designer</h5>
+                            <h2 class="casestudy_title">Why Waste More? WasteLess.</h2>
+                            <p class="casestudy_summary">Created to solve the problem of incorrectly identifying and disposing of waste, my strategy in this hackathon was to design functional and feasible mockups that would make disposing waste not a waste of time.</p>
+                            <button class="casestudy_btn" type="button" id="casestudy_wasteless"><h5>Read Case Study</h5></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- productvision -> add AXS in Work -->
+            <section class="casestudy" id="study4">
+                <div class="casestudy_info" id="study4_card">
+                    <h4>ProductVision</h4>
+                    <div class="casestudy_info_card_padding">
+                        <div class="casestudy_info_card">
+                            <h5 class="casestudy_position">President, Marketing Chair</h5>
+                            <h2 class="casestudy_title">From Scratch, COVID-edition</h2>
+                            <p class="casestudy_summary">Born out of the desire to learn about product management, building a student organization from the ground up is one thing - amidst COVID is another. Here’s my story on building a brand from scratch.</p>
+                            <button class="casestudy_btn" type="button" id="casestudy_productvision"><h5>Read Case Study</h5></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Catalyst Designathon 2020 -> add other designathons in Work -->
+            <section class="casestudy" id="study5">
+                <div class="casestudy_info" id="study5_card">
+                    <h4>Catalyst Designathon 2020</h4>
+                    <div class="casestudy_info_card_padding">
+                        <div class="casestudy_info_card">
+                            <h5 class="casestudy_position">Designathon Participant, UX Designer</h5>
+                            <h2 class="casestudy_title">Unwrapping Safe Celebrations!</h2>
+                            <p class="casestudy_summary">How do we connect during the COVID-19 pandemic? In this 5-hour designathon hosted by BU FORGE Design Club, my team and I explore the world of digital celebrations.</p>
+                            <button class="casestudy_btn" type="button" id="casestudy_unwrap"><h5>Read Case Study</h5></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- parallax rellax -->
+                <div class="casestudy_unwrap_pic unwrap_phone1 rellax" data-rellax-speed="-2">
+                    <img src="/images/unwrap_phone1.png" alt="Case Study Unwrap Mockup">
+                </div>
+                <div class="casestudy_unwrap_pic unwrap_phone2 rellax" data-rellax-speed="-2">
+                    <img src="/images/unwrap_phone2.png" alt="Case Study Unwrap Mockup">
+                </div>
+                <div class="casestudy_unwrap_pic unwrap_phone3 rellax" data-rellax-speed="-2">
+                    <img src="/images/unwrap_phone3.png" alt="Case Study Unwrap Mockup">
+                </div>
+            </section>
+        </main>
     
-        <!-- bumpcall -->
-        <section class="casestudy" id="study2">
-            <div class="casestudy_info" id="study2_card">
-                <h4>bumpcall</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Director of Product Design, Digital Designer Intern</h5>
-                        <h2 class="casestudy_title">A New Way to Stay In Touch</h2>
-                        <p class="casestudy_summary">From intern to director at a start-up company, I led the creative team through product design iterations, redesigning mobile app screens and forging brand identity.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_bumpcall"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
-            </div>
-        </section>
     
-        <!-- hoya hacks 2021 -> go into more hacks in Work -->
-        <section class="casestudy" id="study3">
-            <div class="casestudy_info" id="study3_card">
-                <h4>Hoya Hacks 2021</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Hackathon Participant, UX Designer</h5>
-                        <h2 class="casestudy_title">Why Waste More? WasteLess.</h2>
-                        <p class="casestudy_summary">Created to solve the problem of incorrectly identifying and disposing of waste, my strategy in this hackathon was to design functional and feasible mockups that would make disposing waste not a waste of time.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_wasteless"><h5>Read Case Study</h5></button>
-                    </div>
+        <footer>
+            <!-- SOCIALS for the people!
+                 email: andyvo@bu.edu
+                 github: andyyvo
+                 linkedin: andyyvo
+                 insta: andyy.vo -->
+            <div class="copyright">
+                <h4>Let's have a coffee chat ☕</h4>
+                <div class="socials">
+                    <a href="mailto:andyvo@bu.edu" class="social_link mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/andyyvo/" class="social_link github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/andyyvo/" class="social_link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/andyy.vo/" class="social_link insta" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
+                <!-- emoji ideas: tree, boba (not on all platforms), guitar, music, cowboy emoji, celebrate confetti popper, nerd emoji, rollerblades, lightbulb, fire -->
+                <p class="copyright_text">Designed 🎨 and coded 👨‍💻 by Andy Vo</p>
+                <p class="copyright_text"><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</p>
             </div>
-        </section>
-    
-        <!-- productvision -> add AXS in Work -->
-        <section class="casestudy" id="study4">
-            <div class="casestudy_info" id="study4_card">
-                <h4>ProductVision</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">President, Marketing Chair</h5>
-                        <h2 class="casestudy_title">From Scratch, COVID-edition</h2>
-                        <p class="casestudy_summary">Born out of the desire to learn about product management, building a student organization from the ground up is one thing - amidst COVID is another. Here’s my story on building a brand from scratch.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_productvision"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
+            <!-- closing html tag as logo -->
+            <div class="logo">
+                <a href="#">&lt;/Andy Vo&gt;</a>
             </div>
-        </section>
-    
-        <!-- Catalyst Designathon 2020 -> add other designathons in Work -->
-        <section class="casestudy" id="study5">
-            <div class="casestudy_info" id="study5_card">
-                <h4>Catalyst Designathon 2020</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Designathon Participant, UX Designer</h5>
-                        <h2 class="casestudy_title">Unwrapping Safe Celebrations!</h2>
-                        <p class="casestudy_summary">How do we connect during the COVID-19 pandemic? In this 5-hour designathon hosted by BU FORGE Design Club, my team and I explore the world of digital celebrations.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_unwrap"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
-            </div>
-            <!-- parallax rellax -->
-            <div class="casestudy_unwrap_pic unwrap_phone1 rellax" data-rellax-speed="-2">
-                <img src="/images/unwrap_phone1.png" alt="Case Study Unwrap Mockup">
-            </div>
-            <div class="casestudy_unwrap_pic unwrap_phone2 rellax" data-rellax-speed="-2">
-                <img src="/images/unwrap_phone2.png" alt="Case Study Unwrap Mockup">
-            </div>
-            <div class="casestudy_unwrap_pic unwrap_phone3 rellax" data-rellax-speed="-2">
-                <img src="/images/unwrap_phone3.png" alt="Case Study Unwrap Mockup">
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <!-- SOCIALS for the people!
-             email: andyvo@bu.edu
-             github: andyyvo
-             linkedin: andyyvo
-             insta: andyy.vo -->
-        <div class="copyright">
-            <h4>Let's have a coffee chat ☕</h4>
-            <div class="socials">
-                <a href="mailto:andyvo@bu.edu" class="social_link mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/andyyvo/" class="social_link github"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/andyyvo/" class="social_link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/andyy.vo/" class="social_link insta" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <!-- emoji ideas: tree, boba (not on all platforms), guitar, music, cowboy emoji, celebrate confetti popper, nerd emoji, rollerblades, lightbulb, fire -->
-            <p class="copyright_text">Designed 🎨 and coded 👨‍💻 by Andy Vo</p>
-            <p class="copyright_text"><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</p>
-        </div>
-        <!-- closing html tag as logo -->
-        <div class="logo">
-            <a href="#">&lt;/Andy Vo&gt;</a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="/static/js/script.js"></script>
     <script src="/static/js/pages.js"></script>

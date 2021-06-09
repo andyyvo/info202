@@ -8,10 +8,14 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
-body {
+// body {
+//     overflow-x: hidden;
+// }
+
+.wrapper {
     overflow-x: hidden;
 }
 

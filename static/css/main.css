@@ -137,6 +137,7 @@
 @media screen and (max-width: 1023px) {
   .current {
     background-image: url(/images/casestudy_spark.png);
+    background: linear-gradient(rgba(42, 42, 42, 0.75), rgba(42, 42, 42, 0.75));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -554,10 +555,9 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
-body {
+.wrapper {
   overflow-x: hidden;
 }
 
