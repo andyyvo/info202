@@ -137,7 +137,6 @@
 @media screen and (max-width: 1023px) {
   .current {
     background-image: url(/images/casestudy_spark.png);
-    background: linear-gradient(rgba(42, 42, 42, 0.75), rgba(42, 42, 42, 0.75));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -146,9 +145,6 @@
   }
   .current_pic {
     display: none;
-  }
-  .current_info {
-    background-color: rgba(42, 42, 42, 0.75);
   }
   .current_info * {
     margin-bottom: 1.875rem;
@@ -315,6 +311,18 @@
   .casestudy_info {
     width: 100%;
   }
+  #study1 {
+    background-attachment: scroll;
+  }
+  #study2 {
+    background-attachment: scroll;
+  }
+  #study3 {
+    background-attachment: scroll;
+  }
+  #study4 {
+    background-attachment: scroll;
+  }
   #study1_card {
     background-color: rgba(26, 26, 26, 0.85);
   }
@@ -329,6 +337,10 @@
   }
   #study5 {
     background-image: url(/images/casestudy_unwrap.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
     z-index: 2;
   }
   #study5 .casestudy_unwrap_pic, #study5 .unwrap_phone1, #study5 .unwrap_phone2, #study5 .unwrap_phone3 {
@@ -336,6 +348,17 @@
   }
   #study5_card {
     background-color: rgba(255, 160, 158, 0.8);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(/images/mobile_landing.png);
+    background-position: center;
+    padding: 5rem 2rem;
+  }
+  .hero .hero_img {
+    display: none;
   }
 }
 
@@ -555,10 +578,10 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.wrapper {
-  position: fixed;
+body {
   overflow-x: hidden;
 }
 
@@ -691,9 +714,9 @@ nav .logo a, nav .logo a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
   }
   .menu li {
     opacity: 0;
@@ -718,6 +741,7 @@ nav .logo a, nav .logo a:visited {
 
 .nav-active {
   transform: translateX(0%);
+  opacity: 1;
   z-index: 5;
 }
 
@@ -784,7 +808,7 @@ footer a, footer a:visited {
   align-items: center;
   justify-content: center;
   font-size: 2.25rem;
-  gap: 2rem;
+  gap: 2rem !important;
 }
 
 .social_link {

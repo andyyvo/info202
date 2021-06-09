@@ -136,7 +136,6 @@
 @media screen and (max-width: 1023px) {
     .current {
         background-image: url(/images/casestudy_spark.png);
-        background: linear-gradient(rgba(42, 42, 42, 0.75), rgba(42, 42, 42, 0.75));
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -145,9 +144,6 @@
     }
     .current_pic {
         display: none;
-    }
-    .current_info {
-        background-color: rgba(42, 42, 42, 0.75);
     }
     .current_info * {
         margin-bottom: 1.875rem;
@@ -312,6 +308,18 @@
     .casestudy_info {
         width: 100%;
     }
+    #study1 {
+        background-attachment: scroll;
+    }
+    #study2 {
+        background-attachment: scroll;
+    }
+    #study3 {
+        background-attachment: scroll;
+    }
+    #study4 {
+        background-attachment: scroll;
+    }
     #study1_card {
         background-color: rgba(26, 26, 26, 0.85);
     }
@@ -326,6 +334,10 @@
     }
     #study5 {
         background-image: url(/images/casestudy_unwrap.png);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        pointer-events: none;
         z-index: 2;
         .casestudy_unwrap_pic, .unwrap_phone1, .unwrap_phone2, .unwrap_phone3 {
             display: none;
@@ -336,8 +348,30 @@
     }
 }
 
-// @media screen and (max-width: 767px) {
-//     #study1, #study2 {
-//         background-attachment: scroll;
-//     }
-// }
+@media screen and (max-width: 767px) {
+    .hero {
+        background-image: url(/images/mobile_landing.png);
+        background-position: center;
+        padding: 5rem 2rem;
+        .hero_img {
+            display: none;
+        }
+    }
+    // for centering background on mobile
+    // #study1 {
+    //     background-image: url(/images/mobile_bucsa.png);
+    //     background-position: center;
+    // }
+    // #study2 {
+    //     background-image: url(/images/mobile_bumpcall.png);
+    //     background-position: center;
+    // }
+    // #study4 {
+    //     background-image: url(/images/mobile_productvision.png);
+    //     background-position: center;
+    // }
+    // #study5 {
+    //     background-image: url(/images/mobile_unwrap.png);
+    //     background-position: center;
+    // }
+}
