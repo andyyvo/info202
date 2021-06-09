@@ -15,7 +15,7 @@
     }
     p {
         color: $ltblack;
-        padding-right: 8vw;
+        padding-right: 4vw;
         a {
             text-decoration: none;
             color: $ltblack;
@@ -149,9 +149,13 @@
 @media screen and (max-width: 1023px) {
     .about {
         flex-direction: column;
+        padding: 5rem 2rem;
     }
     .about_img {
         margin-bottom: 45vh;
+    }
+    .about_text {
+        margin-top: 5rem;
     }
     .before_image, .after_image {
         left: 0;
@@ -174,7 +178,7 @@
         }
     }
     .about_community {
-        padding: 5rem 5rem 10rem 5rem;
+        padding: 5rem 2rem;
     }
     .about_img:hover {
         .behind_image.bi1 {
@@ -196,3 +200,12 @@
         flex: 1 1 calc(50% - 10px);
     }
 }
+
+/* your css rules for ipad portrait */
+// @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+//     .ipad-portrait { color: red; } 
+// }
+/* your css rules for ipad landscape */
+// @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    
+// }
