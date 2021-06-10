@@ -210,3 +210,20 @@
 // @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
     
 // }
+
+/* your css rules for ipad pro landscape */
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .about {
+        flex-direction: column;
+        padding: 5rem 2rem;
+    }
+    .about_text {
+        margin-left: 2rem;
+        p {
+            padding-right: 0;
+        }
+    }
+    .about_community {
+        padding: 5rem 2rem;
+    }
+}
