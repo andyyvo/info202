@@ -362,6 +362,48 @@
   }
 }
 
+/* your css rules for ipad portrait */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+/* your css rules for ipad landscape */
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  #study1 {
+    background-attachment: scroll;
+  }
+  #study2 {
+    background-attachment: scroll;
+  }
+  #study3 {
+    background-attachment: scroll;
+  }
+  #study4 {
+    background-attachment: scroll;
+  }
+  #study5 {
+    background-image: url(/images/casestudy_unwrap.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: 2;
+  }
+  #study5 .casestudy_unwrap_pic, #study5 .unwrap_phone1, #study5 .unwrap_phone2, #study5 .unwrap_phone3 {
+    display: none;
+  }
+  .current {
+    gap: 0;
+  }
+  .current_info {
+    margin-left: 2rem;
+  }
+}
+
 .about {
   width: 100%;
   height: auto;
@@ -563,6 +605,7 @@
   }
   .about_com_card {
     flex-direction: column;
+    align-items: flex-start;
   }
   .paragraph_text {
     margin-top: 2rem;
@@ -846,9 +889,16 @@ footer a, footer a:visited {
 }
 
 @media screen and (max-width: 1023px) {
-  footer .logo {
-    font-size: 1.5rem;
+  .socials {
+    gap: 0;
   }
+  .social_link {
+    margin: 0 1rem;
+  }
+}
+
+/* your css rules for ipad landscape */
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
   .socials {
     gap: 0;
   }

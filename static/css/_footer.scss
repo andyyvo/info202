@@ -67,9 +67,16 @@ footer a, footer a:visited {
 }
 
 @media screen and (max-width: 1023px) {
-    footer .logo {
-        font-size: $h4;
+    .socials {
+        gap: 0;
     }
+    .social_link {
+        margin: 0 1rem;
+    }
+}
+
+/* your css rules for ipad landscape */
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
     .socials {
         gap: 0;
     }
