@@ -29,6 +29,9 @@
     <link rel="mask-icon" type="image/png" href="/images/andyvo_logo.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -50,7 +53,7 @@
 
     <main>
         <section class="hero">
-            <div class="hero_text">
+            <div class="hero_text" data-aos="fade-up" data-aos-duration="1500">
                 <h1>Hello! I’m Andy 👋</h1>
                 <br>
                 <div class="hero_subtext">
@@ -195,5 +198,11 @@
     <script src="/static/js/pages.js"></script>
     <script src="/static/js/rellax.min.js"></script>
     <script src="/static/js/rellax_script.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
