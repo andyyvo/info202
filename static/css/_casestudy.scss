@@ -22,7 +22,17 @@
         height: auto;
         background-color: $white;
     }
+    &.cskickoff {
+        width: 100%;
+        height: auto;
+        background-color: $silverblue;
+    }
     &.csresearch {
+        width: 100%;
+        height: auto;
+        background-color: $white;
+    }
+    &.cspersonas {
         width: 100%;
         height: auto;
         background-color: $silverblue;
@@ -94,6 +104,10 @@
     }
 }
 
+span.highlightBlue {
+    background-color: $highlightBlue;
+}
+
 #original_wordpress_grid {
     margin-top: 4rem;
     display: grid;
@@ -102,5 +116,24 @@
     img {
         width: 100%;
         height: auto;
+    }
+}
+
+#personas_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .personas_content {
+        flex: 1;
+        text-align: center;
+        transition: all 300ms ease-in-out;
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .personas_content:hover {
+        transform: scale(115%);
     }
 }

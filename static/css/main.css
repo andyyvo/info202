@@ -660,7 +660,19 @@
   background-color: #FFF;
 }
 
+.casestudy_section.cskickoff {
+  width: 100%;
+  height: auto;
+  background-color: #DAE5F1;
+}
+
 .casestudy_section.csresearch {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+}
+
+.casestudy_section.cspersonas {
   width: 100%;
   height: auto;
   background-color: #DAE5F1;
@@ -737,6 +749,10 @@
   height: auto;
 }
 
+span.highlightBlue {
+  background-color: #1ABCFE;
+}
+
 #original_wordpress_grid {
   margin-top: 4rem;
   display: grid;
@@ -747,6 +763,28 @@
 #original_wordpress_grid img {
   width: 100%;
   height: auto;
+}
+
+#personas_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#personas_flex .personas_content {
+  flex: 1;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+#personas_flex .personas_content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+#personas_flex .personas_content:hover {
+  transform: scale(115%);
 }
 
 * {
