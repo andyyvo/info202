@@ -831,25 +831,25 @@ span.highlightBlue {
 }
 
 @media screen and (max-width: 767px) {
-  h1 {
+  .casestudy_section h1 {
     font-size: 3rem;
   }
-  h2 {
+  .casestudy_section h2 {
     font-size: 2.25rem;
   }
-  h3 {
+  .casestudy_section h3 {
     font-size: 1.5rem;
   }
-  h4 {
+  .casestudy_section h4 {
     font-size: 1.125rem;
   }
-  p {
+  .casestudy_section p {
     font-size: 0.875rem;
   }
-  .overview_grid {
+  .casestudy_section .overview_grid {
     grid-template-columns: 1fr;
   }
-  .youtube_vid {
+  .casestudy_section .youtube_vid {
     width: 300;
     height: 189;
   }
