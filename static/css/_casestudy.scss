@@ -42,15 +42,10 @@
         height: auto;
         background-color: $white;
     }
-    &.csfinal_design {
-        width: 100%;
-        height: auto;
-        background-color: $silverblue;
-    }
     &.csreflection {
         width: 100%;
         height: auto;
-        background-color: $white;
+        background-color: $silverblue;
     }
 }
 
@@ -133,7 +128,75 @@ span.highlightBlue {
             margin-bottom: 1.5rem;
         }
     }
-    .personas_content:hover {
+    .personas_content:hover, .personas_content:focus {
         transform: scale(115%);
     }
 }
+
+.figma_cs_imgs {
+    width: 75%;
+    height: auto;
+}
+
+.figma_cs_imgs2 {
+    width: 100%;
+    height: auto;
+}
+
+#bucsa_lofi {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#bucsa_landing {
+    width: 100%;
+}
+
+.griditem {
+    margin: 2rem 0;
+    display: grid;
+    column-gap: 1rem;
+    &.twocol {
+        grid-template-columns: 1fr 1fr;
+    }
+    &.threecol {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &.fivecol {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+// tablet and mobile
+@media screen and (max-width: 767px) {
+    .overview_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* your css rules for ipad pro portrait */
+@media all and (max-width: 834px) and (max-height: 1194px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .overview_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .cs_content {
+        flex-direction: column;
+        &_title {
+            flex: auto;
+        }
+        &_text {
+            flex: auto;
+        }
+    }
+}
+
+// /* your css rules for ipad pro landscape */
+// @media all and (max-width: 1194px) and (max-height: 834px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+// }
