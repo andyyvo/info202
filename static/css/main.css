@@ -831,6 +831,21 @@ span.highlightBlue {
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
   .overview_grid {
     grid-template-columns: 1fr;
   }

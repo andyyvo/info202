@@ -179,6 +179,21 @@ span.highlightBlue {
 
 // tablet and mobile
 @media screen and (max-width: 767px) {
+    h1 {
+        font-size: $h2;
+    }
+    h2 {
+        font-size: $h3;
+    }
+    h3 {
+        font-size: $h4;
+    }
+    h4 {
+        font-size: $p;
+    }
+    p {
+        font-size: $h5;
+    }
     .overview_grid {
         grid-template-columns: 1fr;
     }
