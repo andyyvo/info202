@@ -1,5 +1,5 @@
 document.getElementById("casestudy_bucsa").onclick = function() {
-    location.href = "#";
+    location.href = "bucsambassadors";
 };
 
 document.getElementById("casestudy_bumpcall").onclick = function() {
