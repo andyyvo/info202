@@ -732,6 +732,11 @@
   margin-top: 0.5rem;
 }
 
+.cs_content_text img {
+  width: 100%;
+  height: auto;
+}
+
 .cs_overview_img {
   width: 100%;
   height: auto;
