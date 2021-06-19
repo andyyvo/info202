@@ -3,7 +3,7 @@ document.getElementById("casestudy_bucsa").onclick = function() {
 };
 
 document.getElementById("casestudy_bumpcall").onclick = function() {
-    location.href = "#";
+    location.href = "bumpcall";
 };
 
 document.getElementById("casestudy_wasteless").onclick = function() {

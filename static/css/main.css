@@ -647,6 +647,15 @@
   background-position: center;
 }
 
+.bumpcall_header_img {
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/casestudy_imgs_bump/bump_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .casestudy_section {
   width: 100%;
   height: auto;
@@ -654,40 +663,12 @@
   color: #2A2A2A;
 }
 
-.casestudy_section.csoverview {
-  width: 100%;
-  height: auto;
+.casestudy_section.whiteback {
   background-color: #FFF;
 }
 
-.casestudy_section.cskickoff {
-  width: 100%;
-  height: auto;
-  background-color: #DAE5F1;
-}
-
-.casestudy_section.csresearch {
-  width: 100%;
-  height: auto;
-  background-color: #FFF;
-}
-
-.casestudy_section.cspersonas {
-  width: 100%;
-  height: auto;
-  background-color: #DAE5F1;
-}
-
-.casestudy_section.csdesign {
-  width: 100%;
-  height: auto;
-  background-color: #FFF;
-}
-
-.casestudy_section.csreflection {
-  width: 100%;
-  height: auto;
-  background-color: #DAE5F1;
+.casestudy_section.silverblueback {
+  background-color: #EDF6FF;
 }
 
 .cs_header {

@@ -11,41 +11,26 @@
     background-position: center;
 }
 
+.bumpcall_header_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/casestudy_imgs_bump/bump_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .casestudy_section {
     width: 100%;
     height: auto;
     padding: 4rem 10% 8rem 10%;
     color: $black;
-    
-    &.csoverview {
-        width: 100%;
-        height: auto;
+
+    &.whiteback {
         background-color: $white;
     }
-    &.cskickoff {
-        width: 100%;
-        height: auto;
-        background-color: $silverblue;
-    }
-    &.csresearch {
-        width: 100%;
-        height: auto;
-        background-color: $white;
-    }
-    &.cspersonas {
-        width: 100%;
-        height: auto;
-        background-color: $silverblue;
-    }
-    &.csdesign {
-        width: 100%;
-        height: auto;
-        background-color: $white;
-    }
-    &.csreflection {
-        width: 100%;
-        height: auto;
-        background-color: $silverblue;
+    &.silverblueback {
+        background-color: $ltsilverblue;
     }
 }
 
