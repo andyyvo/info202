@@ -44,7 +44,14 @@
 }
 
 .h4sub {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.quotecard {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: $silverblue;
+    border-radius: 1rem;
 }
 
 .cs_content {
@@ -154,6 +161,9 @@ span.highlightBlue {
     }
     &.threecol {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    &.fourcol {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     &.fivecol {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
