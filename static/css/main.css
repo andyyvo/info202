@@ -667,10 +667,6 @@
   background-color: #FFF;
 }
 
-.casestudy_section.silverblueback {
-  background-color: #EDF6FF;
-}
-
 .cs_header {
   margin-bottom: 4rem;
 }
@@ -682,6 +678,15 @@
 
 .h4sub {
   margin-bottom: 1rem;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #DAE5F1;
+  border-width: 0;
+  border-radius: 1px;
+  margin: auto;
 }
 
 .quotecard {
@@ -740,6 +745,10 @@ span.highlightBlue {
   background-color: #1ABCFE;
 }
 
+span.highlightRed {
+  background-color: #FF7262;
+}
+
 #original_wordpress_grid {
   margin-top: 4rem;
   display: grid;
@@ -765,7 +774,7 @@ span.highlightBlue {
 }
 
 #personas_flex .personas_content img {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin-bottom: 1.5rem;
 }
@@ -840,6 +849,9 @@ span.highlightBlue {
   }
   .casestudy_section .overview_grid {
     grid-template-columns: 1fr;
+  }
+  .casestudy_section .grid_content {
+    margin-bottom: 1rem;
   }
   .casestudy_section .youtube_vid {
     width: 300;
