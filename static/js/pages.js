@@ -7,13 +7,13 @@ document.getElementById("casestudy_bumpcall").onclick = function() {
 };
 
 document.getElementById("casestudy_wasteless").onclick = function() {
-    location.href = "#";
+    location.href = "wip";
 };
 
 document.getElementById("casestudy_productvision").onclick = function() {
-    location.href = "#";
+    location.href = "wip";
 };
 
 document.getElementById("casestudy_unwrap").onclick = function() {
-    location.href = "#";
+    location.href = "wip";
 };
