@@ -1,37 +1,35 @@
-// Fonts
-
-$spacemono: 'Space Mono', monospace;
-$roboto: 'Roboto', sans-serif;
+// design system for new avoportfolio
 
 
-// Font Sizes
+// fonts
 
-$h1: 3.5rem; //56px big text for landing
-$h2: 3rem; //48px headers for sections
-$h3: 2.25rem; //36px
-$h4: 1.5rem; //24px
-$h5: 0.875rem; //14px subtitles
-$p: 1.125rem; //18px text
+$inter: 'Inter', sans-serif;
 
 
-// Font Weight
+// font sizes
 
+$h1: 5rem; //80px - page titles
+$h2: 2.5rem; //48px - section headers
+$h3: 1.5rem; //24px - subtitles of page titles, list items
+$h4: 1.25rem; //20px - casestudy subsection headers
+$sub: .875rem; //14px - small print
+$p: 1.125rem; //16px - paragraph text
+
+
+// font weight
+
+$blackbold: 900;
 $bold: 700;
 $regular: 400;
 
 
-// Colors
+// colors
 
-$white: #FFF;
-$black: #2A2A2A;
-$ltblack: #3D3D3D;
-$blue: #3D75B7;
-$gray: #93A3B7;
-$silverblue: #DAE5F1;
-$ltsilverblue: #EDF6FF;
-
-$highlightGreen: #0ACF83;
-$highlightBlue: #1ABCFE;
-$highlightPurple: #A259FF;
-$highlightYellow: #FCCC63;
-$highlightRed: #FF7262;
+$white: #FFF;     // main background
+$blue95: #EDF1F8; // conclusion color
+$blue85: #C8D5EA; // highlight color
+$blue75: #91ACD4; 
+$blue55: #5A82BF;
+$blue40: #395D93; // highlight-rev color
+$blue25: #243A5C;
+$blue10: #0E1725; // paragraph text, breaking background pace, box buttons

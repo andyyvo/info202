@@ -5,39 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Vo</title>
-    <meta name="description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
+    <meta name="description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-199547569-1');
-    </script>
+    </script> -->
     <!-- facebook tags -->
     <meta property="og:title" content="Andy Vo">
-    <meta property="og:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
-    <meta property="og:image" content="https://andyvo.com/images/andyvo_tree_fb.png">
+    <meta property="og:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
+    <!-- <meta property="og:image" content="https://andyvo.com/images/andyvo_tree_fb.png"> -->
     <meta property="og:url" content="https://andyvo.com/">
     <meta property="og:type" content="website">
     <!-- twitter tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Andy Vo">
-    <meta property="twitter:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
-    <meta property="twitter:image" content="https://andyvo.com/images/andyvo_tree_tw.png">
+    <meta property="twitter:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
+    <!-- <meta property="twitter:image" content="https://andyvo.com/images/andyvo_tree_tw.png"> -->
     <!-- for mobile themes i think -->
     <meta name="theme-color" content="#2A2A2A">
 
     <!-- main css -->
     <link rel="stylesheet" href="/static/css/main.css">
-    <!-- space mono and roboto pairing -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"> 
     <!-- favicon stuffs -->
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_logo.png">
-    <link rel="mask-icon" type="image/png" href="/images/andyvo_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/andyvo_new_logo_alt.png">
+    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
+    <link rel="mask-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
@@ -46,169 +47,193 @@
 
 </head>
 <body>
-    <nav>
-        <!-- andy vo html tag logo -->
+    <nav class="navbar">
         <div class="logo">
-            <a href="/">&lt;Andy Vo&gt;</a>
+            <a href="/">
+                <img src="/images/full_logo_dark.svg" alt="Andy Vo logo">
+            </a>
         </div>
-        <div class="hamburger">
-            <div class="hamburgerline1"></div>
-            <div class="hamburgerline2"></div>
-            <div class="hamburgerline3"></div>
+        <div class="menu">
+            <input type="checkbox" class="menu_box">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <ul class="menu">
-            <li class="item active"><a href="/">Work</a></li>
-            <li class="item"><a href="about">About</a></li>
-            <li class="item"><a href="/images/andyvo_cv.pdf" target="_blank">Resume</a></li>
-        </ul>
+        <div class="options">
+            <div class="options_list_wrapper">
+                <ul class="options_list">
+                    <li><a href="work"><h3>Work</h3></a></li>
+                    <li><a href="about"><h3>About</h3></a></li>
+                    <li><a href="/images/andyvo_cv.pdf" target="_blank"><h3>Resume</h3></a></li>
+                </ul>
+                <div class="options_list_contact">
+                    <h4><b>Say hello! 👋</b></h4>
+                    <a href="mailto:andyvo@bu.edu"><h3>andyvo@bu.edu</h3></a>
+                </div>
+            </div>
+        </div>
     </nav>
-
+    
     <main>
-        <section class="hero">
-            <div class="hero_text" data-aos="fade-up" data-aos-duration="1500">
-                <h1>Hello! I’m Andy 👋</h1>
-                <br>
-                <div class="hero_subtext">
-                    <p>I’m a product designer studying at Boston University bringing users together through accessible design.</p>
-                    <br>
-                    <!-- animated typewriter effect for fun -->
-                    <p>Find me <span class="typewriter" data-wait="3000" data-words='["climbing trees!", "programming web and mobile apps!", "turning imagination into creation!", "cooking for my food insta!", "exploring Figma, Boston, and the world!"]'></span></p>
+        <div class="hero_index">
+            <div class="hero_index_links" id="climber_hero">
+                <div class="hero_index_links_padding" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true">
+                    <a href="#climber"><h1>CLIMBER.</h1></a>
                 </div>
             </div>
-            <div class="hero_img">
-                <img src="/images/full_tree.svg" type="image/svg" alt="Andy Vo Connected Tree">
+            <div class="hero_index_links" id="designer_hero">
+                <div class="hero_index_links_padding" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-delay="50">
+                    <a href="#designer"><h1>DESIGNER.</h1></a>
+                </div> 
             </div>
-            <!-- click to scroll to first casestudy -->
-            <div class="scrollDown"><a href="#study1"><i class="fas fa-angle-double-down"></i></a></div>
-        </section>
-        
-        <!-- current works -->
-        <section class="current">
-            <div class="current_pic">
-                <img src="/images/spark-logo-round.png" type="image/png" alt="BU Spark! logo">
+            <div class="hero_index_links" id="me_hero">
+                <div class="hero_index_links_padding" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-delay="100">
+                    <a href="about"><h1><b>ANDY VO.</b></h1></a>
+                </div>
             </div>
-            <div class="current_info">
-                <h4 class="current_co">BU Spark!</h4>
-                <h5>User Experience Design Intern</h5>
-                <h2>Shaping Accessible Journalism</h2>
-                <p>Currently In Progress.</p>
+            <div class="hero_index_links" id="researcher_hero">
+                <div class="hero_index_links_padding" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-delay="150">
+                    <a href="#researcher"><h1>RESEARCHER.</h1></a>
+                </div>
             </div>
-        </section>
+            <div class="hero_index_links" id="storyteller_hero">
+                <div class="hero_index_links_padding" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true" data-aos-delay="200">
+                    <a href="#storyteller"><h1>STORYTELLER.</h1></a>
+                </div>
+            </div>
+        </div>
 
-        <!-- bucsambassadors -->
-        <section class="casestudy" id="study1">
-            <div class="casestudy_info" id="study1_card">
-                <h4>BU CS Ambassadors</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Freelance Web Developer</h5>
-                        <h2 class="casestudy_title">Redesigning the Face of CS @ BU</h2>
-                        <p class="casestudy_summary">In a web design competition, I redefined the club’s branding to not only appeal to modern design practices but also to incoming collegiate freshmen looking for an inclusive, supporting community.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_bucsa"><h5>Read Case Study</h5></button>
+        <div class="fullpage fpwhite" id="climber">
+            <div class="climbergrid">
+                <div class="leftimg" data-aos="fade" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <img src="/images/index_climber.svg" alt="Climber goalsetting with a vision">
+                </div>
+                <div class="rightcontent" data-aos="fade" data-aos-duration="1000"data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <h2 class="textbottommargin">Every design starts with a <b>vision</b>.</h2>
+                    <p class="textbottommargin">From ideation to creation, take the first steps to building your next design with me. I’ll guide you through my design process in creating data-driven experiences, web and mobile mockups, and branding.</p>
+                    <a href="/about#climb"><button class="learnmorebtn"><p><b>Learn More</b></p></button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="autopage" id="designer">
+            <h2><b>SELECTED WORKS.</b></h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="twocolrowgrid">
+                <div class="selectedwork work1" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <div class="selectedwork_videowrapper">
+                        <a href="scdao">
+                            <video class="videoPlayer" src="/videos/scdao_demo.m4v" preload="auto" loop="loop" onmouseover="this.play();" onmouseout="this.pause();this.currentTime=0;"></video>
+                        </a>
+                    </div>
+                    <div class="selectedwork_title">
+                        <a href="scdao">
+                            <h3><b>Suffolk County DA's Office</b></h3>
+                        </a>
+                    </div>
+                    <div class="selectedwork_caption">
+                        <p>
+                            My team and I designed a mobile app to digitize the police documentation process and lower the incarceration rate for misdemeanors of MA.
+                        </p>
+                    </div>
+                </div>
+                <div class="selectedwork work2" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <div class="selectedwork_videowrapper">
+                        <a href="muckrock">
+                            <video class="videoPlayer" src="/videos/muckrock_demo.m4v" preload="auto" loop="loop" onmouseover="this.play();" onmouseout="this.pause();this.currentTime=0;"></video>
+                        </a>
+                    </div>
+                    <div class="selectedwork_title">
+                        <a href="muckrock">
+                            <h3><b>MuckRock</b></h3>
+                        </a>
+                    </div>
+                    <div class="selectedwork_caption">
+                        <p>
+                            To streamline the public records request process, I researched and designed a request tracker web app to reshape accessibility in journalism.
+                        </p>
+                    </div>
+                </div>
+                <div class="selectedwork work3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <div class="selectedwork_videowrapper">
+                        <a href="bucsa">
+                            <video class="videoPlayer" src="/videos/bucsa_demo.m4v" preload="auto" loop="loop" onmouseover="this.play();" onmouseout="this.pause();this.currentTime=0;"></video>
+                        </a>
+                    </div>
+                    <div class="selectedwork_title">
+                        <a href="bucsa">
+                            <h3><b>BUCSA</b></h3>
+                        </a>
+                    </div>
+                    <div class="selectedwork_caption">
+                        <p>
+                            In a web design competition, I redefined the club’s branding to appeal to incoming collegiate freshmen looking for an inclusive CS community.
+                        </p>
+                    </div>
+                </div>
+                <div class="selectedwork work4" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                    <div class="selectedwork_videowrapper">
+                        <a href="bumpcall">
+                            <video class="videoPlayer" src="/videos/bump_demo.m4v" preload="auto" loop="loop" onmouseover="this.play();" onmouseout="this.pause();this.currentTime=0;"></video>
+                        </a>
+                    </div>
+                    <div class="selectedwork_title">
+                        <a href="bumpcall">
+                            <h3><b>bumpcall</b></h3>
+                        </a>
+                    </div>
+                    <div class="selectedwork_caption">
+                        <p>
+                            I led the creative team through product design iterations, redesigning mobile app screens and forging brand identity for the start-up.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-    
-        <!-- bumpcall -->
-        <section class="casestudy" id="study2">
-            <div class="casestudy_info" id="study2_card">
-                <h4>bumpcall</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Director of Product Design, Digital Designer Intern</h5>
-                        <h2 class="casestudy_title">A New Way to Stay In Touch</h2>
-                        <p class="casestudy_summary">From intern to director at a start-up company, I led the creative team through product design iterations, redesigning mobile app screens and forging brand identity.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_bumpcall"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
+        </div>
+
+        <div class="autopage dark" id="researcher">
+            <div class="largetextwrapper" data-aos="fade" data-aos-duration="1000"data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                <h2>To build a brand’s story, I work closely with clients to define, design, and develop seamless experiences that aim to make a global impact.</h2>
+                <a href=""><p>Learn More.</p></a>
             </div>
-        </section>
-    
-        <!-- hoya hacks 2021 -> go into more hacks in Work -->
-        <section class="casestudy" id="study3">
-            <div class="casestudy_info" id="study3_card">
-                <h4>Hoya Hacks 2021</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Hackathon Participant, UX Designer</h5>
-                        <h2 class="casestudy_title">Why Waste More? WasteLess.</h2>
-                        <p class="casestudy_summary">Created to solve the problem of incorrectly identifying and disposing of waste, my strategy in this hackathon was to design functional and feasible mockups that would make disposing waste not a waste of time.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_wasteless"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
+        </div>
+        
+        <div class="page90 fpwhite" id="storyteller">
+            <div class="invitetextwrapper" data-aos="fade" data-aos-duration="1000"data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                <h2><b>What’s your story? Let’s (coffee ☕) chat.</b></h2>
+                <a href="mailto:andyvo@bu.edu"><p>andyvo@bu.edu</p></a>
             </div>
-        </section>
-    
-        <!-- productvision -> add AXS in Work -->
-        <section class="casestudy" id="study4">
-            <div class="casestudy_info" id="study4_card">
-                <h4>ProductVision</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">President, Marketing Chair</h5>
-                        <h2 class="casestudy_title">From Scratch, COVID-edition</h2>
-                        <p class="casestudy_summary">Born out of the desire to learn about product management, building a student organization from the ground up is one thing - amidst COVID is another. Here’s my story on building a brand from scratch.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_productvision"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Catalyst Designathon 2020 -> add other designathons in Work -->
-        <section class="casestudy" id="study5">
-            <div class="casestudy_info" id="study5_card">
-                <h4>Catalyst Designathon 2020</h4>
-                <div class="casestudy_info_card_padding">
-                    <div class="casestudy_info_card">
-                        <h5 class="casestudy_position">Designathon Participant, UX Designer</h5>
-                        <h2 class="casestudy_title">Unwrapping Safe Celebrations!</h2>
-                        <p class="casestudy_summary">How do we connect during the COVID-19 pandemic? In this 5-hour designathon hosted by BU FORGE Design Club, my team and I explore the world of digital celebrations.</p>
-                        <button class="casestudy_btn" type="button" id="casestudy_unwrap"><h5>Read Case Study</h5></button>
-                    </div>
-                </div>
-            </div>
-            <!-- parallax rellax -->
-            <div class="casestudy_unwrap_pic unwrap_phone1 rellax" data-rellax-speed="-2">
-                <img src="/images/unwrap_phone1.png" alt="Case Study Unwrap Mockup">
-            </div>
-            <div class="casestudy_unwrap_pic unwrap_phone2 rellax" data-rellax-speed="-2">
-                <img src="/images/unwrap_phone2.png" alt="Case Study Unwrap Mockup">
-            </div>
-            <div class="casestudy_unwrap_pic unwrap_phone3 rellax" data-rellax-speed="-2">
-                <img src="/images/unwrap_phone3.png" alt="Case Study Unwrap Mockup">
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <!-- SOCIALS for the people!
-             email: andyvo@bu.edu
-             github: andyyvo
-             linkedin: andyyvo
-             insta: theandyvo -->
-        <div class="copyright">
-            <h4>Let's have a coffee chat ☕</h4>
-            <div class="socials">
-                <a href="mailto:andyvo@bu.edu" class="social_link mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/andyyvo/" class="social_link github"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/andyyvo/" class="social_link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/theandyvo/" class="social_link insta" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="bottomfooter">
+            <h5><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</h5>
+            <div class="socialicons">
+                <a class="social_link" href="mailto:andyvo@bu.edu">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="social_link" href="https://github.com/andyyvo/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social_link" href="https://www.linkedin.com/in/andyyvo/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social_link" href="https://www.instagram.com/theandyvo/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-            <!-- emoji ideas: tree, boba (not on all platforms), guitar, music, cowboy emoji, celebrate confetti popper, nerd emoji, rollerblades, lightbulb, fire -->
-            <p class="copyright_text">Designed 🎨 and coded 👨‍💻 by Andy Vo</p>
-            <p class="copyright_text"><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</p>
-        </div>
-        <!-- closing html tag as logo -->
-        <div class="logo">
-            <a href="/">&lt;/Andy Vo&gt;</a>
         </div>
     </footer>
 
     <script src="/static/js/script.js"></script>
-    <script src="/static/js/pages.js"></script>
-    <script src="/static/js/rellax.min.js"></script>
-    <script src="/static/js/rellax_script.js"></script>
+    <!-- <script src="/static/js/pages.js"></script> -->
+    <!-- <script src="/static/js/rellax.min.js"></script>
+    <script src="/static/js/rellax_script.js"></script> -->
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

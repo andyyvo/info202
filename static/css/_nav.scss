@@ -1,141 +1,178 @@
 nav {
-    min-height: 80px;
-    height: 10vh;
+    position: fixed;
+    padding: 1.5rem 8%;
+    width: 100%;
+    height: 15vh;
+    // background-color: $blue85;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: $white;
-    gap: 40rem;
-    padding: 0 5%;
+    justify-content: space-between;
+	z-index: 998;
+	transition: all 300ms ease;
+}
+nav:hover {
+	background-color: rgba($color: #FFF, $alpha: 1.0);
 }
 
-nav li {
-    list-style: none;
-    font-family: $roboto;
-    font-size: $p;
-    font-weight: $regular;
+.logo > a > img {
+    width: 5rem;
+    height: auto;
 }
 
-nav li a, nav li a:visited {
-    text-decoration: none;
-    color: $gray;
-}
-
-nav .logo a, nav .logo a:visited {
-    text-decoration: none;
-    color: $black;
-}
-
-.menu li a {
-    transition: all 200ms ease-in;
-}
-
-.menu li a:hover, .menu li a:active {
-    color: $blue;
-}
-
-.item.active {
-    font-weight: $bold;
-    a {
-        color: $black;
-    }
-}
-
-.logo {
-    font-family: $spacemono;
-    font-size: 2.25rem; //36px
-    font-weight: $bold;
-    width: 40%;
-}
-
+// for the icon
 .menu {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.hamburger {
-    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-}
+	z-index: 999;
 
-.hamburger div {
-    width: 40px;
-    height: 4px;
-    background-color: $black;
-    margin: 5px;
-    transition: all 0.5s ease;
-}
-
-// mobile and tablet nav
-@media screen and (max-width: 1023px) {
-    nav {
-        gap: 0;
-    }
-    .logo {
-        width: 100%;
-    }
-    .menu {
-        position: absolute;
-        width: 100%;
-        height: 90vh;
-        top: 10vh;
-        background-color: $black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        z-index: -1;
-    }
-    .menu li {
-        opacity: 0;
-        margin-top: 8rem;
-    }
-    .menu li a {
-        color: $white;
-        font-weight: $bold;
-        text-decoration: none;
-        transition: all 300ms ease-in;
-    }
-    .menu li a:hover, .menu li a:focus {
-        color: $white;
-        text-decoration: underline;
-    }
-    .hamburger {
+    .menu_box {
         display: block;
-    }
-    .item.active a {
-        color: $white;
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-    opacity: 1;
-    z-index: 5;
-}
-
-@keyframes navLinkFade {
-    from {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        position: absolute;
         opacity: 0;
-        transform: translateX(50px);
     }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
+
+    div {
+        margin: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 22px;
+		height: 12px;
     }
+
+    span {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 2.5px;
+		background-color: var(--bar-bg, $blue10);
+		border-radius: 1px;
+		transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+
+		&:first-of-type {
+			top: 0;
+		}
+		&:last-of-type {
+			bottom: 0;
+		}
+	}
+
+    &.active, .menu_box:checked + div {
+        span {
+			background-color: var(--bar-bg, $white);
+            &:first-of-type {
+				transform: rotate(45deg);
+				top: 5px;
+			}
+			&:last-of-type {
+				transform: rotate(-45deg);
+				bottom: 5px;
+			}
+        }
+    }
+
+    &.active:hover span:first-of-type,
+	&.active:hover span:last-of-type,
+	&:hover .menu_box:checked + div span:first-of-type,
+	&:hover .menu_box:checked + div span:last-of-type {
+		width: 22px;
+	}
+
+    &:hover {
+		// no need hover effect on mobile.
+		@media (min-width: 1024px) {
+			span:first-of-type {
+				width: 26px;
+			}
+
+			span:last-of-type {
+				width: 12px;
+			}
+		}
+	}
 }
 
-.toggle .hamburgerline1 {
-    transform: rotate(-45deg) translate(-5px,6px);
+// for the container
+.options {
+	position: absolute;
+	z-index: 998;
+	width: 350px;
+	height: 350px;
+	background-color: $blue40;
+	color: $white;
+	box-shadow: 0px 10px 25px 5px rgba(36, 58, 92, 0.25);
+	top: 1rem;
+	right: 6%;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: opacity 300ms ease-in-out;
+
+	&_list_wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	ul {
+		list-style-type: none;
+		&.options_list {
+			margin: 10% 10%;
+		}
+		li {
+			margin-bottom: 2rem;
+		}
+	}
+	.options_list_contact {
+		margin: 0 10%;
+		> h4 {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	a > h3 {
+		color: $white;
+	}
+	a {
+		position: relative;
+	}
+	a::before {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		width: 0;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: $white;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+	}
+	a:hover::before {
+		visibility: visible;
+		width: 100%;
+	}
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
-.toggle .hamburgerline2 {
-    opacity: 0;
-}
-
-.toggle .hamburgerline3 {
-    transform: rotate(45deg) translate(-6px,-7px);
+// mobile sizes
+@media only screen and (max-width: 43em) {
+    nav {
+		padding:  1.5rem 6%;
+	}
+	.logo > a > img {
+		width: 3rem;
+	}
 }

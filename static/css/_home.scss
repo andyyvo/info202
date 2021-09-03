@@ -1,419 +1,362 @@
-.hero {
-    width: 100%;
-    height: 90vh;
-    max-height: 90vh;
-    padding: 0 5rem 5rem;
+.hero_index {
+    padding-top: 15vh;
+    height: 100vh;
     display: flex;
-    align-items: flex-end;
-    z-index: 2;
-    background-color: $white;
-}
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0rem;
 
-.hero_text {
-    width: 45vw;
-    color: $black;
-}
-
-.hero_subtext {
-    width: 32vw;
-    color: $ltblack;
-}
-
-.hero_img {
-    text-align: center;
-    img {
-        width: 80%;
-        height: auto;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        pointer-events: none;
-    }
-    @media screen and (min-width: 1600px) {
-        width: 80%;
-        height: auto;
-    }
-}
-
-// cursor
-.typewriter > .typewriter_text {
-    border-right: 0.2rem solid $black;
-}
-
-.scrollDown {
-    position: absolute;
-    font-size: 2rem;
-    color: $silverblue;
-    bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    animation: chevronFade 2s ease-in-out infinite;
-    a, a:visited {
-        text-decoration: none;
-        color: $silverblue;
-    }
-}
-
-@keyframes chevronFade {
-    0% {
-        opacity: 0;
-        bottom: 50px;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .scrollDown {
-        display: none;
-    }
-    .hero {
-        display: block;
-    }
-    .hero_text, .hero_subtext {
+    &_links {
         width: 100%;
-    }
-    .hero_img {
-        margin-top: 2rem;
-        img {
-            max-width: 60%;
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        
+        &#climber_hero {
+            &::before {
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+                content: '';
+                width: 0%;
+                height: 100%;
+                background-color: $blue85;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            &:hover {
+                &::before {
+                    background-color: $blue85;
+                    width: 100%;
+                }
+            }
+        }
+        
+        &#designer_hero {
+            &::before {
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+                content: '';
+                width: 0%;
+                height: 100%;
+                background-color: $blue75;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            &:hover {
+                &::before {
+                    background-color: $blue75;
+                    width: 100%;
+                }
+            }
+        }
+        &#me_hero {
+            &::before {
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+                content: '';
+                width: 0%;
+                height: 100%;
+                background-color: $blue55;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            &:hover {
+                &::before {
+                    background-color: $blue55;
+                    width: 100%;
+                }
+            }
+        }
+        &#researcher_hero {
+            &::before {
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+                content: '';
+                width: 0%;
+                height: 100%;
+                background-color: $blue40;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            a {
+                color: $blue10;
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+            &:hover {
+                &::before {
+                    background-color: $blue40;
+                    width: 100%;
+                }
+                a {
+                    color: $white;
+                }
+            }
+        }
+        &#storyteller_hero {
+            &::before {
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+                content: '';
+                width: 0%;
+                height: 100%;
+                background-color: $blue25;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            a {
+                color: $blue10;
+                transition: all 0.85s cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+            &:hover {
+                &::before {
+                    background-color: $blue25;
+                    width: 100%;
+                }
+                a {
+                    color: $white;
+                }
+            }
         }
     }
-}
-
-@media screen and (max-width: 879px) {
-    .hero_img {
-        img {
-            max-width: 65%;
-        }
+    &_links_padding {
+        padding-left: 20%;
     }
 }
 
-// current works
-.current {
-    background-color: $black;
-    color: $white;
-    width: 100%;
-    height: 70vh;
-    padding: 0 2rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-}
-
-.current_pic {
-    flex: 2;
-    text-align: right;
-}
-
-.current_pic > img {
-    width: auto;
-    height: 50vh;
-}
-
-.current_info {
-    flex: 3;
-}
-
-.current_info *:not(:last-child) {
-    margin-bottom: 1.875rem;
-}
-
-.current_co {
-    padding-bottom: 5rem;
-}
-
-@media screen and (max-width: 1023px) {
-    .current {
-        background-image: url(/images/casestudy_spark.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: auto;
-        padding: 5% 8%;
-    }
-    .current_pic {
-        display: none;
-    }
-    .current_info * {
-        margin-bottom: 1.875rem;
-    }
-}
-
-// case studies
-.casestudy {
-    background-color: $white;
+.fullpage {
     width: 100%;
     height: 100vh;
-    position: relative;
-}
-
-#study1 {
-    background-image: url(/images/casestudy_bucsa.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    pointer-events: none;
-    z-index: 2;
-}
-
-#study2 {
-    background-image: url(/images/casestudy_bumpcall.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    pointer-events: none;
-    z-index: 2;
-}
-
-#study3 {
-    background-image: url(/images/casestudy_wasteless.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    pointer-events: none;
-    z-index: 2;
-}
-
-#study4 {
-    background-image: url(/images/casestudy_productvision.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    pointer-events: none;
-    z-index: 2;
-}
-
-#study5 {
-    background-color: #FFC100;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    pointer-events: none;
-    z-index: 1;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.casestudy_info {
-    pointer-events: all;
-    position: absolute;
-    width: 40vw;
-    height: 100%;
-    padding: 5% 8%;
-}
-
-#study1_card {
-    background-color: #1A1A1A;
-    color: $white;
-}
-
-#study2_card {
-    background-color: #FF6B00;
-    color: $white;
-}
-
-#study3_card {
-    background-color: rgba(135, 209, 241, 0.9);
-    color: $white;
-}
-
-#study4_card {
-    background-color: #2F4790;
-    color: $white;
-}
-
-#study5_card {
-    background-color: #FFA09E;
-    color: $white;
-}
-
-.casestudy_info_card_padding {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.casestudy_info_card *:not(:last-child) {
-    margin-bottom: 1.875rem;
-}
-
-.casestudy_btn {
-    background-color: transparent;
-    border: 2px solid $white;
-    border-radius: 10px;
-    padding: 1rem 1.75rem;
-    text-align: center;
-    display: inline-block;
-    color: $white;
-    cursor: pointer;
-    transition: all 200ms ease-in;
-}
-
-.casestudy_btn:hover, .casestudy_btn:focus {
-    background-color: $white;
-    color: $black;
-    box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.25);
-    h5 {
-        font-weight: $bold;
+    padding: 0% 20%;
+    
+    &.fpwhite {
+        background-color: $white;
     }
-}
-
-.casestudy_unwrap_pic {
-    position: absolute;
-    display: block;
-    img {
-        width: 36rem;
-        height: auto;
-    }
-}
-.unwrap_phone1 {
-    top: 2%;
-    left: 56%;
-}
-
-.unwrap_phone2 {
-    top: 4%;
-    left: 27%;
-}
-
-.unwrap_phone3 {
-    top: 50%;
-    left: 57%;
-}
-
-@media screen and (min-width: 1600px) {
-    .casestudy_unwrap_pic > img {
-        width: 50rem;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .casestudy_info {
+    
+    .climbergrid {
+        padding-top: 15vh;
         width: 100%;
-    }
-    #study1 {
-        background-attachment: scroll;
-    }
-    #study2 {
-        background-attachment: scroll;
-    }
-    #study3 {
-        background-attachment: scroll;
-    }
-    #study4 {
-        background-attachment: scroll;
-    }
-    #study1_card {
-        background-color: rgba(26, 26, 26, 0.85);
-    }
-    #study2_card {
-        background-color: rgba(255, 107, 0, 0.8);
-    }
-    #study3_card {
-        background-color: rgba(135, 209, 241, 0.9);
-    }
-    #study4_card {
-        background-color: rgba(47, 71, 144, 0.8);
-    }
-    #study5 {
-        background-image: url(/images/casestudy_unwrap.png);
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-size: cover;
-        pointer-events: none;
-        z-index: 2;
-        .casestudy_unwrap_pic, .unwrap_phone1, .unwrap_phone2, .unwrap_phone3 {
-            display: none;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 5rem;
+        grid-template-rows: 1fr;
+        align-items: center;
+        >.leftimg {
+            position: relative;
+            width: 20rem;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        >.rightcontent {
+            color: $blue10;
+            text-align: right;
         }
     }
-    #study5_card {
-        background-color: rgba(255, 160, 158, 0.8);
-    }
+
 }
 
-@media screen and (max-width: 767px) {
-    .hero {
-        background-image: url(/images/mobile_landing.png);
-        background-position: center;
-        padding: 5rem 2rem;
-        .hero_img {
-            display: none;
-        }
-    }
-    // for centering background on mobile
-    // #study1 {
-    //     background-image: url(/images/mobile_bucsa.png);
-    //     background-position: center;
-    // }
-    // #study2 {
-    //     background-image: url(/images/mobile_bumpcall.png);
-    //     background-position: center;
-    // }
-    // #study4 {
-    //     background-image: url(/images/mobile_productvision.png);
-    //     background-position: center;
-    // }
-    // #study5 {
-    //     background-image: url(/images/mobile_unwrap.png);
-    //     background-position: center;
-    // }
-}
+.page90 {
+    width: 100%;
+    height: 90vh;
+    padding: 0% 20%;
 
-/* your css rules for ipad pro portrait */
-@media all and (max-width: 834px) and (max-height: 1194px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .hero {
+    &.fpwhite {
+        background-color: $white;
+    }
+    
+    .invitetextwrapper {
+        width: 100%;
+        height: 90%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $blue10;
+    
+        > a {
+            position: relative;
+            margin-top: 2rem;
+        }
+        > a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $blue10;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        > a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
     }
 }
 
-/* your css rules for ipad pro landscape */
-@media all and (max-width: 1194px) and (max-height: 834px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-    #study1 {
-        background-attachment: scroll;
+.textbottommargin {
+    margin-bottom: 1.75rem;
+}
+
+button.learnmorebtn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1px solid $blue10;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    
+    transition: all 300ms ease-out;
+    
+    &:hover, &:active {
+        color: $white;
+        box-shadow: inset 15rem 0 0 0 $blue10
     }
-    #study2 {
-        background-attachment: scroll;
-    }
-    #study3 {
-        background-attachment: scroll;
-    }
-    #study4 {
-        background-attachment: scroll;
-    }
-    #study5 {
-        background-image: url(/images/casestudy_unwrap.png);
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-size: cover;
-        pointer-events: none;
-        z-index: 2;
-        .casestudy_unwrap_pic, .unwrap_phone1, .unwrap_phone2, .unwrap_phone3 {
-            display: none;
+}
+
+.autopage {
+    width: 100%;
+    height: auto;
+    padding: 15vh 20%;
+
+    &.dark {
+        background-color: $blue10;
+        a {
+            color: $white;
         }
     }
-    .current {
-        gap: 0;
+    &.light {
+        background-color: $white;
     }
-    .current_info {
-        margin-left: 2rem;
+    &.lightb {
+        background-color: $blue95;
+    }
+    .largetextwrapper {
+        width: 100%;
+        height: 100%;
+        margin: 40vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+        > a > p {
+            color: $white;
+        }
+        > a {
+            position: relative;
+            margin-top: 2rem;
+        }
+        > a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $white;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        > a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}
+
+.twocolrowgrid {
+    display: grid;
+    grid-template-columns: [left-start] auto [left-end right-start] auto[right-end];
+    column-gap: 20%;
+    grid-template-rows: [top-start] auto [top-end bottom-start] auto [bottom-end space-start] 1fr [space-end];
+    row-gap: 10rem;
+}
+
+// mobile sizes
+@media only screen and (max-width: 43em) {
+    .twocolrowgrid {
+        display: block;
+        .work1, .work2, .work3 {
+            margin-bottom: 2rem;
+        }
+    }
+}
+@media only screen and (max-width: 80em) {
+    .fullpage {
+        .climbergrid {
+            display: block;
+            >.leftimg {
+                max-width: 15rem;
+            }
+            >.rightcontent {
+                margin-top: 2rem;
+                color: $blue10;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.selectedwork {
+    display: flex;
+    flex-direction: column;
+
+    &.work1 {
+        grid-column-start: left-start;
+        grid-column-end: left-end;
+        grid-row-start: top-start;
+        grid-row-end: top-end;
+    }
+    &.work2 {
+        grid-column-start: right-start;
+        grid-column-end: right-end;
+        grid-row-start: top-start;
+        grid-row-end: top-end;
+    }
+    &.work3 {
+        grid-column-start: left-start;
+        grid-column-end: left-end;
+        grid-row-start: bottom-start;
+        grid-row-end: bottom-end;
+    }
+    &.work4 {
+        grid-column-start: right-start;
+        grid-column-end: right-end;
+        grid-row-start: bottom-start;
+        grid-row-end: bottom-end;
+    }
+
+    &_videowrapper {
+        max-width: 100%;
+        transform: scale(100%);
+        transition: transform 400ms ease;
+        video {
+            max-width: 100%;
+        }
+    }
+    &_videowrapper:hover, &_videowrapper:focus {
+        transform: scale(105%);
+    }
+    &_title {
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+    &_caption {
+        padding: 0 1rem;
+        margin-top: 1rem;
     }
 }

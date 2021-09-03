@@ -1,3 +1,5 @@
+// globals
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,52 +10,77 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden;
+main {
+    min-width: 0;
 }
 
 h1 {
-    font-family: $spacemono;
+    font-family: $inter;
     font-size: $h1;
-    font-weight: $bold;
+    font-weight: $regular;
 }
 
 h2 {
-    font-family: $spacemono;
-    font-size: 2.5rem;
-    font-weight: $bold;
-}
-
-@media screen and (min-width: 1600px) {
-    h2 {
-        font-size: $h2;
-    }
+    font-family: $inter;
+    font-size: $h2;
+    font-weight: $regular;
 }
 
 h3 {
-    font-family: $roboto;
+    font-family: $inter;
     font-size: $h3;
     font-weight: $regular;
 }
 
 h4 {
-    font-family: $roboto;
+    font-family: $inter;
     font-size: $h4;
-    font-weight: $bold;
+    font-weight: $regular;
 }
 
 h5 {
-    font-family: $spacemono;
-    font-size: $h5;
+    font-family: $inter;
+    font-size: $sub;
     font-weight: $regular;
-    text-transform: uppercase;
 }
 
 p {
-    font-family: $roboto;
+    font-family: $inter;
     font-size: $p;
     font-weight: $regular;
+    line-height: 150%;
+}
+
+// mobile sizes
+@media only screen and (max-width: 43em) {
+    h1 {
+        font-size: $h2;
+    }
+    h2 {
+        font-size: $h3;
+    }
+    h3 {
+        font-size: $h4;
+    }
+    h4 {
+        font-size: $p;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: $sub;
+    }
+}
+
+a {
+    width: max-content;
+    text-decoration: none;
+    color: $blue10;
+}
+
+div {
+    word-wrap: break-word;
 }

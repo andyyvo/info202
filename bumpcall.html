@@ -5,379 +5,228 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Vo | bumpcall</title>
-    <meta name="description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
+    <meta name="description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-199547569-1');
-    </script>
+    </script> -->
     <!-- facebook tags -->
     <meta property="og:title" content="Andy Vo">
-    <meta property="og:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
-    <meta property="og:image" content="https://andyvo.com/images/andyvo_tree_fb.png">
+    <meta property="og:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
+    <!-- <meta property="og:image" content="https://andyvo.com/images/andyvo_tree_fb.png"> -->
+    <meta property="og:url" content="https://andyvo.com/">
+    <meta property="og:type" content="website">
     <!-- twitter tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Andy Vo">
-    <meta property="twitter:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
-    <meta property="twitter:image" content="https://andyvo.com/images/andyvo_tree_tw.png">
-    <meta property="og:url" content="https://andyvo.com/">
-    <meta property="og:type" content="website">
+    <meta property="twitter:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
+    <!-- <meta property="twitter:image" content="https://andyvo.com/images/andyvo_tree_tw.png"> -->
     <!-- for mobile themes i think -->
     <meta name="theme-color" content="#2A2A2A">
 
     <!-- main css -->
     <link rel="stylesheet" href="/static/css/main.css">
-    <!-- space mono and roboto pairing -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"> 
     <!-- favicon stuffs -->
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_logo.png">
-    <link rel="mask-icon" type="image/png" href="/images/andyvo_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/andyvo_new_logo_alt.png">
+    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
+    <link rel="mask-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <nav>
-        <!-- andy vo html tag logo -->
+    <nav class="navbar">
         <div class="logo">
-            <a href="/">&lt;Andy Vo&gt;</a>
+            <a href="/">
+                <img src="/images/full_logo_dark.svg" alt="Andy Vo logo">
+            </a>
         </div>
-        <div class="hamburger">
-            <div class="hamburgerline1"></div>
-            <div class="hamburgerline2"></div>
-            <div class="hamburgerline3"></div>
+        <div class="menu">
+            <input type="checkbox" class="menu_box">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <ul class="menu">
-            <li class="item active"><a href="/">Work</a></li>
-            <li class="item"><a href="about">About</a></li>
-            <li class="item"><a href="/images/andyvo_cv.pdf" target="_blank">Resume</a></li>
-        </ul>
+        <div class="options">
+            <div class="options_list_wrapper">
+                <ul class="options_list">
+                    <li><a href="work"><h3>Work</h3></a></li>
+                    <li><a href="about"><h3>About</h3></a></li>
+                    <li><a href="/images/andyvo_cv.pdf" target="_blank"><h3>Resume</h3></a></li>
+                </ul>
+                <div class="options_list_contact">
+                    <h4><b>Say hello! 👋</b></h4>
+                    <a href="mailto:andyvo@bu.edu"><h3>andyvo@bu.edu</h3></a>
+                </div>
+            </div>
+        </div>
     </nav>
-
+    
     <main>
-        <section class="csheader">
-            <div class="bumpcall_header_img"></div>
-        </section>
-        <section class="casestudy_section whiteback">
-            <h1 class="cs_header">bumpcall</h1>
-            <div class="overview_grid">
-                <div class="grid_content">
-                    <h4 class="h4sub">Role</h4>
-                    <p>Director of Product Design</p>
-                    <p>Digital Designer Intern</p>
+        <div class="casestudy">
+            <div class="autopage light" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                <section class="casestudy-title">
+                    <a href="https://bumpcall.com/" target="_blank"><h1 class="highlight"><b>bumpcall.</b></h1></a>
+                    <h3 class="casestudy-subtitle"><b>Redesigning a New Way to Stay in Touch <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/k-12-guidance.html" target="_blank" class="smallsubs">~COVID times~</a></b></h3>
+                </section>
+    
+                <div class="casestudy-hero">
+                    <img src="/images/case_bump/bump_header.png" alt="bumpcall mockups">
                 </div>
-                <div class="grid_content">
-                    <h4 class="h4sub">Duration</h4>
-                    <p>March 2021 - June 2021</p>
-                </div>
-                <div class="grid_content">
-                    <h4 class="h4sub">Team</h4>
-                    <p>Grady Gillett</p>
-                    <p>Sarah Bargfrede</p>
-                </div>
-                <div class="grid_content">
-                    <h4 class="h4sub">Tools</h4>
-                    <p>Figma, Adobe Illustrator</p>
-                </div>
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Overview</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Stage #2 startup <a href="https://bumpcall.com/" target="_blank">bumpcall</a> sought to redefine the approach to communication and needed Digital Design Interns to make that happen.</h4>
-                    <p>That's where I came in. bumpcall's goal was to change communication by turning "bumps on the street" to five-minute FaceTime calls. The founders realized that there was a need to change the way we talk, to decrease the looming anxiety of waiting for texts and not knowing when to call. Through the pandemic, bumpcall was born. Joining bumpcall early on, I made the most of my knowledge from hackathon and designathon competitions and saw this as an opportunity to put my UI/UX design skills to work through countless iterations.</p>
-                </div>
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>My Contribution</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <p>As one of two interns for a startup, I took on a big position as someone who would make significant design decisions. Weekly, we would discuss with one of the cofounders and run through new iterations of pieces of the app we designed. Given that the mobile app only had a few iterations of the MVP to begin with, I was able to design numerous pages, states, components, and iterations of the product. As my junior spring semester came to a close, I was brought on as Director of Product Design briefly to continue my work with the designs before finally parting ways.</p>
-                </div>
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Our Solution</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <p>With only a few prototyped screens ranging from opening the app to "bumping into someone", my job as an intern was to <b>redesign the entire app</b>. Researching the psychology and cognitive processes of friendships, of reaching out to someone in-person and digitally, and of running into someone, our solution was to bring new life to the product with new colors, new interactions, and new conversations.</p>
-                </div>
-            </div>
-            <div class="cs_overview_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_two_screen.png" alt="bumpcall launch and main screen mockups" style="display: block; margin-left: auto; margin-right: auto; max-width: 600px;">
-            </div>
-        </section>
-        <hr>
-        <section class="casestudy_section whiteback">
-            <h2 class="cs_header">Kickoff</h2>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Problem</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Texting is hard — you don't want to spam but seeing that iMessage bubble or read receipt is stressful — and spontaneously calling/FaceTiming isn't any easier.</h4>
-                    <p>Being left on read, misinterpreting a message, coming off as needy, admitting to ourselves we don't communicate as much as we feel we should, not knowing what to talk about... so many factors can come into play nowadays. <a href="https://thekeep.eiu.edu/cgi/viewcontent.cgi?article=3185&context=theses">Correlational analysis</a> on the relationships between text messaging and social psychology shows a significant negative relationship between self-perception of text message dependancy and self-esteem. Similarly, the study shows a positively linked correlation between text messaging and social anxiety.</p>
-                    <br>
-                    <p>With most folks, especially young adults in school or college, on their electronic devices for more than 5 hours a day during the pandemic, a <a href="https://journals.sagepub.com/doi/full/10.1177/2167702617723376">study</a> shows that 48 percent of teens spending at least five hours per day on an electronic device have at least one suicide risk factor. The short story is that it's complicated, but an attachment to our devices has led to a digital "FOMO", or fear of missing out, and we see it in texting, messaging, etc.</p>
-                    <div class="quotecard">
-                        <p><i>"I hate the game - am I responding too quick, am I taking too long? I don’t want to be seen as needy because that makes me not worthwhile."</i></p>
-                        <br>
-                        <p>—Yugan</p>
+    
+                <section class="casestudy-intro">
+                    <div class="twocolgrid">
+                        <div class="col1">
+                            <h4 class="casestudy-headline"><b>Overview.</b></h4>
+                            <p class="casestudy-content">Bumpcall is a start-up that aims to change the way we communicate by bumping into someone on the phone in five-minute video calls to tackle the looming anxiety of texts. While the entire creative team was involved in all aspects, I took the lead on designing microinteractions, and redesigning the userflow from opening the app to bumping into a friend.</p>
+                        </div>
+                        <div class="col2">
+                            <h4 class="casestudy-headline"><b>Team.</b></h4>
+                            <p class="casestudy-content">Team of 3 (myself + co-founder + intern)</p>
+                            <h4 class="casestudy-headline"><b>Role.</b></h4>
+                            <p class="casestudy-content">Digital Design Intern (UX + Visual Design)</p>
+                            <h4 class="casestudy-headline"><b>Duration.</b></h4>
+                            <p class="casestudy-content">March 2021 — June 2021</p>
+                        </div>
                     </div>
-                    <div class="quotecard">
-                        <p><i>"[I prefer] calling … I usually text because it’s the norm. I’ve called people who have told me it’s the first time they heard their ringtone in literal years."</i></p>
-                        <br>
-                        <p>—Jack</p>
+                </section>
+            </div>
+
+            <div class="autopage dark">
+                <section class="casestudy-problem" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="casestudy-headline-big"><b>Problem.</b></h2>
+                    <p class="casestudy-content"><b>Texting is hard — you don't want to spam but seeing that iMessage bubble or read receipt is stressful.</b></p>
+                    <p class="casestudy-content"><a class="highlight-rev" href="https://thekeep.eiu.edu/cgi/viewcontent.cgi?article=3185&context=theses" target="_blank"><b>Correlational analysis</b></a> on the relationships between text messaging and social psychology shows a significant negative relationship between self-perception of text message dependancy and self-esteem. Similarly, the study shows a positively linked correlation between text messaging and social anxiety.</p>
+                    <p>With the world on lockdown as a result of COVID-19, <a class="highlight-rev" href="https://www.statista.com/statistics/1189204/us-teens-children-screen-time-daily-coronavirus-before-during/" target="_blank"><b>ongoing surveys</b></a> show that screen time has doubled across all age groups, with social media channels such as Instagram and TikTok booming, <a href="https://asm.org/Press-Releases/2021/June/During-COVID-19-Pandemic,-Increased-Screen-Time-Co" target="_blank" class="highlight-rev"><b>correlating with mental distress</b></a>.</p>
+                </section>
+            </div>
+
+            <div class="autopage light">
+                <section class="casestudy-research" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="casestudy-headline-big"><b>Research.</b></h2>
+                    <h4 class="casestudy-headline"><b>Target Audience.</b></h4>
+                    <p class="casestudy-content">The population I envisioned <b>bumpcall</b> impacting the most was the student and young adult population. While almost every age demographic and field of work interacts with people on a daily basis, the interactions students have with each other have more of a personal value.</p>
+                    <img src="/images/case_bump/studentvsyoungadults.png" alt="Venn diagram comparing similarities and differences between students' and young working adults' social life amidst COVID">
+                    <h4 class="casestudy-headline"><b>User Flow.</b></h4>
+                    <p class="casestudy-content">For this project, I believed that the steps between launching the app and getting on a call with someone should be as streamlined as possible. With added features such as icebreakers, setting and scheduling availability, and configuring the frequency of bumps per day, the diagram below organizes the order of the screens and the relations between them.</p>
+                    <img src="/images/case_bump/user_flow.png" alt="User flow diagram displaying the order and relationships of the screens">
+                </section>
+
+                <section class="casestudy-design">
+                    <h2 class="casestudy-headline-big" data-aos="fade" data-aos-duration="1000" data-aos-once="true"><b>Design.</b></h2>
+                    <div class="twocolgrid casestudy-prev" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col1">
+                            <h4 class="casestudy-headline"><b>Previous Iterations.</b></h4>
+                            <p class="casestudy-content">Before I joined, the Director of Product Design for the start-up made a few early-stage iterations. I went through the original prototype on Figma and constructed a list of all UX problems for the redesign process seen below.</p>
+                        </div>
+                        <div class="col2">
+                            <img src="/images/case_bump/bump_old.png" alt="previous iteration of bumpcall">
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="twocolgrid casestudy-color" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col1">
+                            <img src="/images/case_bump/bump_style.png" alt="new bumpcall design style guide">
+                        </div>
+                        <div class="col2">
+                            <h4 class="casestudy-headline"><b>Typography & Color.</b></h4>
+                            <p class="casestudy-content">When I saw bumpcall for the first time, I was overwhelmed by the orange and white. I get that orange stimulates <b>excitement and energy</b>, so I convinced the co-founders that there was a need for other colors to balance the orange.</p>
+                        </div>
+                    </div>
+
+                    <div class="twocolgrid casestudy-mainscreen" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col1">
+                            <h4 class="casestudy-headline"><b>BUMP.</b></h4>
+                            <p class="casestudy-content">The way I saw it, the number of action items between app launch to the bump feature should be minimal. I saw bumpcall as an opportunity for those who are reconnecting, occasionally or routinely bumping into each other. My team and I designed the <b>icebreaker feature</b> to separate ourselves from FaceTime calls between close friends.</p>
+                        </div>
+                        <div class="col2">
+                            <video src="/images/case_bump/bumpcall_main_video.m4v" type="video/m4v" autoplay loop muted preload="auto"></video>
+                        </div>
+                    </div>
+                    
+                    <div class="twocolgrid casestudy-invitescreen" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col1">
+                            <video src="/images/case_bump/bumpcall_invite_video.m4v" type="video/m4v" autoplay loop muted preload="auto"></video>
+                        </div>
+                        <div class="col2">
+                            <h4 class="casestudy-headline"><b>Inviting Friends.</b></h4>
+                            <p class="casestudy-content">Everything is better with friends, bumpcall included! To add to that celebratory feel of successfully bumping into someone, I wanted to <b>celebrate</b> inviting friends over to the platform. Since I joined the team at an early stage, I wanted new users such as myself to feel just as excited.</p>
+                        </div>
+                    </div>
+
+                    <div class="twocolgrid casestudy-settingsscreen" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col1">
+                            <h4 class="casestudy-headline"><b>Personalized For the Extroverts And the Introverts.</b></h4>
+                            <p class="casestudy-content">After getting feedback from users, they noticed they bumped into the same people. I suggested a counter and timer feature on the back-end and designed a mute feature on the friends list. I love my friends, but there comes a time when I need my me-time.</p>
+                        </div>
+                        <div class="col2">
+                            <video src="/images/case_bump/bumpcall_settings_video.m4v" type="video/m4v" autoplay loop muted preload="auto"></video>
+                        </div>
+                    </div>
+
+                    <div class="twocolgrid casestudy-schedulescreen" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col1">
+                            <video src="/images/case_bump/bumpcall_schedule_video.m4v" type="video/m4v" autoplay loop muted preload="auto"></video>
+                        </div>
+                        <div class="col2">
+                            <h4 class="casestudy-headline"><b>Scheduling Bump Hours.</b></h4>
+                            <p class="casestudy-content">On top of frequency and availability features, I pulled inspiration from <b>professors' office hours</b>. I know my schedule, I know I usually bump into someone at 10:55 AM between lectures, and so to simulate that experience while sitting in my room in between classes, I translated that into a schedule feature on the app prototype.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Past Iterations</b></h3>
-                </div>
+
+            <div class="autopage lightb">
+                <section class="casestudy-conclusion" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="casestudy-headline-big"><b>Wrapping it Together.</b></h2>
+                    <h4 class="casestudy-headline"><b>What I Learned.</b></h4>
+                    <p class="casestudy-content"><b>Start-up culture is something else.</b> I was a Product/UX Designer, Graphic Designer, Marketer, and more. I made iterations of logos that fell short. I created graphics for the Instagram. I designed wireframe after wireframe. Was it worth it? Absolutely.</p>
+                    <p class="casestudy-content">I came into this role looking for a place to <b>start building my experience beyond designing at hackathons</b> every other weekend. With no expectations, it was satisfying to see my work on a phone screen as an actual part of the product with user feedback. I've gone to my fair share of competitions but this was a full product with no 36-hour rush.</p>
+                    <p class="casestudy-content">While it was frustrating at first to explain to one of the co-founders why all the components couldn't all use glassmorphism or why the orange needed other colors, it was a pleasure building on my experiences both as a designer and as a leader.</p>
+                    <h4 class="casestudy-headline"><b>Impact.</b></h4>
+                    <p>The <b>bumpcall</b> userbase, albeit small, has expressed an increase in interest in the new features launched per update on TestFlight. I was not involved in user testing.</p>
+                </section>
             </div>
-            <div class="griditem twocol" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <img class="figma_cs_imgs2" src="/images/casestudy_imgs_bump/bump_old1.png" alt="old bumpcall iterations">
-                <img class="figma_cs_imgs2" src="/images/casestudy_imgs_bump/bump_old2.png" alt="old bumpcall iterations">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Challenges</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <p>Born out of boredom, bumpcall aims to address the consistent and ever-growing anxiety of digital communication. As an ambitious, enthusiastic, and young user experience designer, bumpcall was <b>my first opportunity into the industry as an intern</b>. At first, I felt like there was a lot riding on this, even though it was <i>unpaid</i>.</p>
-                    <br>
-                    <p>Beyond my personal desires and challenges, some initial challenges with bumpcall was the disagreement of what the bumpcall brand was to become. There was simply <b>an overwhelming amount of orange and the wireframe designs felt a bit dated</b>, so communicating suggestions for redesigns was met with resistance by the lead Product Designer who was one of the co-founders. While neither of us had formal design experience, I had collections of past designs from competitions to justify my ideas and eventually meet in the middle with the co-founder.</p>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="casestudy_section whiteback">
-            <h2 class="cs_header">Research</h2>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Audience</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <p>Upon onboarding and discussing the purpose of the product, it came to my mind that bumpcall would best serve the <b>college student population</b>, followed by students in general. This young demographic would be best suited to pitch bumpcall to because of students' daily interactions with each other, seeing each other on campus, in the hallways, libraries, dining halls, study lounges, on the sidewalks, etc. Given that isolation due to COVID-19 was one of the factors that gave rise to bumpcall, students have been one of the most impacted demographics with classes being held virtually and most colleges and universities opting out of reopening campus.</p>
-                    <br>
-                    <p>The premise of bumpcall is to bridge this loss of social interaction and communication via a spontaneous 5-minute video call to imitate that face-to-face coincidental meetup. I find that bumpcall's <b>"bump"</b> feature best fits the student culture and atmosphere due to the frequency and carefree nature of those in real-life interactions. Bumping on bumpcall is a social interaction, not a business meeting.</p>
-                </div>
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Questions</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Competitive Analysis</h4>
-                    <p>While I understood that the co-founders had done their research, I still didn't understand a few things that made this product stand out. The initiative was a great idea, but I wondered how this was in market demand.</p>
-                    <br>
-                    <p><i>"What made this different from sporadically calling or FaceTiming my friends?"</i></p>
-                    <p><i>"There's so many messaging platforms so are we entering a saturated market head-on?"</i></p>
-                    <p><i>"Is it possible to hit the bump and just not bump into anyone?"</i></p>
-                    <br>
-                    <br>
-                    <h4 class="h4sub">How might we...</h4>
-                    <p>Accumulating my research together, I drafted some <i>"How might we..."</i> statements to drive the project in the right direction.</p>
-                    <br>
-                    <p><i>"How might we differentiate ourselves from FaceTime?"</i></p>
-                    <p><i>"How might we connect more people together who might not be the best of friends?"</i></p>
-                    <p><i>"How might we invite more users to the product or get users to share with friends?"</i></p>
-                </div>
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Goal</b></h3>
-                    <br>
-                    <h3><b><span class="highlightRed">How do we bring users together in a way that connects people in a spontaneous "bump on the street"-like fashion amidst the pandemic?</span></b></h3>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="casestudy_section whiteback">
-            <h2 class="cs_header">Personas</h2>
-            <div id="personas_flex" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <div class="personas_content">
-                    <img src="/images/casestudy_imgs_bump/bump_caller.png" alt="bumpcall user calling">
-                    <p><b>A user making the bump</b></p>
-                </div>
-                <div class="personas_content">
-                    <img src="/images/casestudy_imgs_bump/bump_calling.png" alt="bumpcall user calling">
-                    <p><b>A user receiving the bump</b></p>
-                </div>
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Key Takeaways</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <p>When mapping out the user flow of the different routes one might take with bumpcall, it came to our attention that, like introverts and extroverts, <b>we would have users who will be making the calls and users who would receive the calls</b>.</p>
-                    <br>
-                    <p>This distinction became exceptionally clear when the initial prototype had a plain spinning circle upon hitting the <b>bump button</b> in the middle. Users initiating the bump were told that they wait between 20 seconds to several minutes. That is a prime opportunity to make the most out of, but should be limited given that the wait is so variable.</p>
-                    <br>
-                    <p><i>What should a user do in this "waiting room" state?</i></p>
-                    <p><i>How can we keep a user engaged with the product here while they wait for someone to bump into?</i></p>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="casestudy_section whiteback">
-            <h2 class="cs_header">Design</h2>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Decisions</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Design System</h4>
-                    <p>Going through the entire Figma design, the first point of discussion was changing the color. With saturated oranges (and blues for a DND view), the color palette needed a makeover.</p>
-                    <br>
-                    <p>Working with orange was new for me and thus, posed a challenge to find tints and tones to compliment it without taking away the striking effect of the orange. <b>Orange is not a very popular color</b>. Orange is exciting, but can be overwhelming. <b>It signifies energy and enthusiasm, and draws attention</b>. As a result, the selection of the secondary and utility colors were chosen to be more muted colors to accentuate the orange.</p>
-                </div>
-            </div>
-            <img src="/images/casestudy_imgs_bump/bump_color_scheme.png" alt="bumpcall new color scheme" class="figma_cs_imgs2" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <div class="cs_content">
-                <div class="cs_content_title">
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Landing Screen</h4>
-                    <p>Building off the new color palette, I designed several variations of the default landing screen and the DND landing screen. While the co-founder opted for the orange radial background because of its familiarity, I pushed for neutral tone base colors as the background because of <b>the higher level of contrast between the background and the CTA button — the bump</b>. Unfortunately, that suggestion was not successful.</p>
-                    <br>
-                    <p>The other components of the page were designed with a mind for minimalism, as we wanted users to simply think about bumping into a friend as biggest priority at the time. Experimenting with icons and drop shadows, </p>
-                </div>
-            </div>
-            <div class="cs_overview_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_landing_screens.png" alt="bumpcall new landing screen iterations" style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px;">
-                <img src="/images/casestudy_imgs_bump/bump_landing_screens_components.png" alt="bumpcall new landing screen component variations" style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px;">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Loading Screens</h4>
-                    <p>Rather than an infinite spinning wheel overlay when clicking the bump button, I designed a series of loading screens that would not only make a wait time more enjoyable, but also <b>prompt the user to think of questions</b> along the way.</p>
-                </div>
-            </div>
-            <div class="griditem fivecol" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_loading1.png" alt="bumpcall loading screen" class="figma_cs_imgs2">
-                <img src="/images/casestudy_imgs_bump/bump_loading2.png" alt="bumpcall loading screen" class="figma_cs_imgs2">
-                <img src="/images/casestudy_imgs_bump/bump_loading3.png" alt="bumpcall loading screen" class="figma_cs_imgs2">
-                <img src="/images/casestudy_imgs_bump/bump_loading4.png" alt="bumpcall loading screen" class="figma_cs_imgs2">
-                <img src="/images/casestudy_imgs_bump/bump_loading5.png" alt="bumpcall loading screen" class="figma_cs_imgs2">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                </div>
-                <div class="cs_content_text">
-                    <p>To add more functionality, a swipe-up menu was added to allow the user to select questions or perhaps come up with their own. If companies were to sponsor this product, they could send in questions of their own.</p>
-                </div>
-            </div>
-            <div class="cs_overview_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_loading6.png" alt="bumpcall loading screens" style="display: block; margin-left: auto; margin-right: auto; max-width: 600px;">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b></b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Video Call Prompts</h4>
-                    <p>After selecting a prompt or writing one, a user can see the selected question at the bottom of the call. Similar to FaceTime, bumpcall offers a familiar video call experience.</p>
-                </div>
-            </div>
-            <div class="cs_overview_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_video.png" alt="bumpcall video calls" style="display: block; margin-left: auto; margin-right: auto; max-width: 600px;">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b></b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Friends List & Muting</h4>
-                    <p>While bumping into friends is fun, users in the focus group found that they bumped into some friends more than others and in some cases, friends that they would like to bump into less. A friends list with muting options allows them to control that more.</p>
-                </div>
-            </div>
-            <div class="cs_overview_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_friends.png" alt="bumpcall friends list" style="display: block; margin-left: auto; margin-right: auto; max-width: 600px;">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b></b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Invite Friends</h4>
-                    <p>Using bumpcall isn't any fun without friends. To make sure users can bump into their friends right away, we suggest they sync their contacts and invite them upon downloading!</p>
-                </div>
-            </div>
-            <div class="cs_overview_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <img src="/images/casestudy_imgs_bump/bump_invite_friends.png" alt="bumpcall invite and sync contacts" style="display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
-            </div>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Future</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">Gamification</h4>
-                    <p>Right before departing bumpcall, another section that was under consideration was a way to gamify the product. I had come up with ideas for badges, points, and rewards but hadn't implemented them by the time I left.</p>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="casestudy_section whiteback">
-            <h2 class="cs_header">Reflection</h2>
-            <div class="cs_content">
-                <div class="cs_content_title">
-                    <h3><b>Conclusions</b></h3>
-                </div>
-                <div class="cs_content_text">
-                    <h4 class="h4sub">How about that start-up culture?</h4>
-                    <p>Taking on a role at a start-up was something else. I was a Product/UX Designer, Graphic Designer, Marketer, and more. I made iterations of logos that fell short. I created graphics for the Instagram. I designed wireframe after wireframe. Was it worth it? <b>Absolutely.</b></p>
-                    <br>
-                    <p>To see your work on your phone screen as an actual part of the product, to see it interact with the user, and to get constructive feedback by other users is nothing short of remarkable. I've gone to my fair share of hackathons and designathons before, but this was a full product, with no 36-hour rush.</p>
-                    <br>
-                    <p>While it was frustrating at first to explain to one of the co-founders why the menu bar among other components couldn't all use glassmorphism or why the orange needed other colors, it was a pleasure building on my experiences both as a designer and as a leader (especially in the last few weeks post-junior spring semester).</p>
-                    <br>
-                    <p>Unfortunately, all things must come to an end and my time with bumpcall was cut short as a result of decision to pursue another internship at BU Spark!</p>
-                    <br>
-                    <p><b>Thanks for reading!</b></p>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <!-- SOCIALS for the people!
-             email: andyvo@bu.edu
-             github: andyyvo
-             linkedin: andyyvo
-             insta: theandyvo -->
-        <div class="copyright">
-            <h4>Let's have a coffee chat ☕</h4>
-            <div class="socials">
-                <a href="mailto:andyvo@bu.edu" class="social_link mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/andyyvo/" class="social_link github"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/andyyvo/" class="social_link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/theandyvo/" class="social_link insta" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="bottomfooter">
+            <h5><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</h5>
+            <div class="socialicons">
+                <a class="social_link" href="mailto:andyvo@bu.edu">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="social_link" href="https://github.com/andyyvo/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social_link" href="https://www.linkedin.com/in/andyyvo/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social_link" href="https://www.instagram.com/theandyvo/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-            <!-- emoji ideas: tree, boba (not on all platforms), guitar, music, cowboy emoji, celebrate confetti popper, nerd emoji, rollerblades, lightbulb, fire -->
-            <p class="copyright_text">Designed 🎨 and coded 👨‍💻 by Andy Vo</p>
-            <p class="copyright_text"><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</p>
-        </div>
-        <!-- closing html tag as logo -->
-        <div class="logo">
-            <a href="/">&lt;/Andy Vo&gt;</a>
         </div>
     </footer>
 
     <script src="/static/js/script.js"></script>
+    <!-- <script src="/static/js/pages.js"></script> -->
+    <!-- <script src="/static/js/rellax.min.js"></script>
+    <script src="/static/js/rellax_script.js"></script> -->
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

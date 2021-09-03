@@ -5,226 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Vo | About</title>
-    <meta name="description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
+    <meta name="description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-199547569-1');
-    </script>
+    </script> -->
     <!-- facebook tags -->
     <meta property="og:title" content="Andy Vo">
-    <meta property="og:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
-    <meta property="og:image" content="https://andyvo.com/images/andyvo_tree_fb.png">
+    <meta property="og:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
+    <!-- <meta property="og:image" content="https://andyvo.com/images/andyvo_tree_fb.png"> -->
     <meta property="og:url" content="https://andyvo.com/">
     <meta property="og:type" content="website">
     <!-- twitter tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Andy Vo">
-    <meta property="twitter:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through accessible design.">
-    <meta property="twitter:image" content="https://andyvo.com/images/andyvo_tree_tw.png">
+    <meta property="twitter:description" content="Andy Vo is a Product/UX Designer and Front-End Developer studying Computer Science at Boston University, passionate about creating experiences that bring users together through storytelling.">
+    <!-- <meta property="twitter:image" content="https://andyvo.com/images/andyvo_tree_tw.png"> -->
     <!-- for mobile themes i think -->
     <meta name="theme-color" content="#2A2A2A">
 
     <!-- main css -->
     <link rel="stylesheet" href="/static/css/main.css">
-    <!-- space mono and roboto pairing -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"> 
     <!-- favicon stuffs -->
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_logo.png">
-    <link rel="mask-icon" type="image/png" href="/images/andyvo_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/andyvo_new_logo_alt.png">
+    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
+    <link rel="mask-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
 </head>
 <body>
-    <nav>
-        <!-- andy vo html tag logo -->
+    <nav class="navbar">
         <div class="logo">
-            <a href="/">&lt;Andy Vo&gt;</a>
+            <a href="/">
+                <img src="/images/full_logo_dark.svg" alt="Andy Vo logo">
+            </a>
         </div>
-        <div class="hamburger">
-            <div class="hamburgerline1"></div>
-            <div class="hamburgerline2"></div>
-            <div class="hamburgerline3"></div>
+        <div class="menu">
+            <input type="checkbox" class="menu_box">
+            <div>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <ul class="menu">
-            <li class="item"><a href="/">Work</a></li>
-            <li class="item active"><a href="about">About</a></li>
-            <li class="item"><a href="/images/andyvo_cv.pdf" target="_blank">Resume</a></li>
-        </ul>
+        <div class="options">
+            <div class="options_list_wrapper">
+                <ul class="options_list">
+                    <li><a href="work"><h3>Work</h3></a></li>
+                    <li><a href="about"><h3>About</h3></a></li>
+                    <li><a href="/images/andyvo_cv.pdf" target="_blank"><h3>Resume</h3></a></li>
+                </ul>
+                <div class="options_list_contact">
+                    <h4><b>Say hello! 👋</b></h4>
+                    <a href="mailto:andyvo@bu.edu"><h3>andyvo@bu.edu</h3></a>
+                </div>
+            </div>
+        </div>
     </nav>
-
+    
     <main>
-        <section class="about">
-            <div class="about_img">
-                <img class="before_image" src="/images/andyvo_foodie.jpg" type="image/png" alt="Andy Vo Eating Food">
-                <video class="after_image" src="/images/andyvo_eats.mp4" playsinline muted autoplay loop></video>
-                <div class="behind_image bi1"></div>
-                <div class="behind_image bi2"></div>
+        <div class="autopage light">
+            <div id="me" data-aos="fade" data-aos-duration="1000" data-aos-once="true">
+                <div class="about_name">
+                    <h1><b>ANDY VO.</b></h1>
+                </div>
+                <div class="twocolgrid">
+                    <div class="col1">
+                        <img src="/images/andyvo_square.JPG" alt="portrait image of Andy Vo">
+                    </div>
+                    <div class="col2">
+                        <p>Hi there! I'm an interdisciplinary product designer exploring data, accessibility, and interaction. Through storytelling, I create experiences for start-ups that aim to connect people.</p>
+                        <br>
+                        <p>Currently, I'm a first-generation fourth-year at <a href="https://www.bu.edu/" target="_blank">Boston University</a> and the <a href="https://www.bu.edu/khc/" target="_blank">Kilachand Honors College</a> studying Computer Science and interning at <a href="https://www.bu.edu/spark/" target="_blank">Spark!</a></p>
+                        <br>
+                        <p>Outside of Figma, I am an avid tree climber 🌲, major foodie 🍜, Star Wars/MCU enthusiast 🌌, and indie rock/pop guitarist 🎸.</p>
+                        <br>
+                        <a href="/images/andyvo_cv.pdf" target="_blank"><button class="learnmorebtn"><p><b>Resume</b></p></button></a>
+                    </div>
+                </div>
             </div>
-            <div class="about_text" data-aos="fade-up" data-aos-duration="1500">
-                <h2>A little bit about me 🤠</h2>
-                <br>
-                <p>Hi there! I'm Andy and I am an interdisciplinary product designer and developer based in Boston and New Hampshire. I will be graduating from Boston University and the Kilachand Honors College with a Bachelor's in Computer Science.</p>
-                <br>
-                <p>Through my experiences, I am inspired by social innovation and storytelling. To bring people together through accessible design is the goal of every project I pursue. At the heart of UX design is to maximize the "naturalness" of the interactions between a user and the product. How can we make the user flow not only fun and not robotic but also natural like a conversation? It's all about adding a bit more color to the world.</p>
-                <br>
-                <p>Outside of Figma, I am an avid tree climber 🌲, major foodie (cooking and eating) 🍜, Star Wars enthusiast 🌌, and indie rock/pop guitarist 🎸. With my headset in and music on, I'll be dancing in my room or heel clicking down the street trying to beat my 89,119 minutes of Spotify from last year.</p>
-                <br>
-                <p>But enough about me. Let's talk about you! Message me through <a href="mailto:andyvo@bu.edu"><b>email</b></a> or <a href="https://www.linkedin.com/in/andyyvo/"><b>LinkedIn</b></a> with some food recommendations and let's have ourselves a coffee chat!</p>
+            <div id="exp" data-aos="fade" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                <div class="twocolgrid">
+                    <div class="col1">
+                        <div class="about_name">
+                            <h2><b>EXPERIENCE.</b></h2>
+                        </div>
+                        <div class="about_content">
+                            <a href="https://buforgedesign.com/" target="_blank"><p class="highlight"><b>FORGE Design Studios</b></p></a>
+                            <p>Design Intern</p>
+                            <p>July 2021 — Present</p>
+                            <br>
+                            <br>
+                            <a href="https://www.bu.edu/spark/" target="_blank"><p class="highlight"><b>Spark!</b></p></a>
+                            <p>User Experience Design Intern</p>
+                            <p>November 2020 — Present</p>
+                            <br>
+                            <br>
+                            <a href="https://bumpcall.com/" target="_blank"><p class="highlight"><b>bumpcall</b></p></a>
+                            <p>Digital Design Intern</p>
+                            <p>March 2021 — June 2021</p>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="about_name">
+                            <h2><b>SKILLS.</b></h2>
+                        </div>
+                        <div class="about_content">
+                            <p><b>Design Methods</b></p>
+                            <p>Full-stack design</p>
+                            <p>User experience research + design</p>
+                            <p>Information architecture</p>
+                            <p>Journey mapping</p>
+                            <p>UI engineering</p>
+                            <p>Prototyping + wireframing</p>
+                            <br>
+                            <p><b>Tools & Languages</b></p>
+                            <p>Figma</p>
+                            <p>Adobe CC</p>
+                            <p>HTML/CSS/JS</p>
+                        </div>
+                    </div>    
+                </div>
             </div>
-        </section>
-
-        <section class="about_community">
-            <h2 class="about_com_header">At Boston University 🐶</h2>
-            <!-- productvision -->
-            <div class="about_com_card" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <div class="about_com_card_info">
-                    <h3><b>President, Marketing Chair</b></h3>
+            <div id="climb" data-aos="fade" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                <div class="about_name">
+                    <h2><b>CLIMB.</b></h2>
+                </div>
+                <div class="about_content">
+                    <p>So you've made it all the way here. I don't know if you hear this enough but <b>thank you!</b> I appreciate you! Over the last 21 years, <b>the climb</b> has taken on many names: <i>"not good enough"</i>, <i>"work harder"</i>, and <i>"the grind"</i>.</p>
                     <br>
-                    <h5><a href="https://productvision.me/" target="_blank">ProductVision</a> | August 2020 - Present</h5>
-                </div>
-                <div class="about_com_card_info paragraph_text">
-                    <p>As part of founding team of ProductVision, BU’s first product management student organization, I led the design behind the branding and the logo. Chairing the Marketing Team, my team and I drove the launch of ProductVision now with 70+ members. I'm looking forward to serving as President this upcoming 2021-2022 year!</p>
-                </div>
-            </div>
-            <!-- alpha chi sigma -->
-            <div class="about_com_card" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <div class="about_com_card_info">
-                    <h3><b>Professional Development Chair, Public Relations Chair</b></h3>
+                    <p>The climb is an evolution of my mindset, my work ethic, my perspective. The climb is what wakes me up in the morning. The climb is what defines my designing, storytelling, and problem solving.</p>
                     <br>
-                    <h5><a href="https://www.axs-bu.com/" target="_blank">Alpha Chi Sigma</a> | April 2020 - Present</h5>
-                </div>
-                <div class="about_com_card_info paragraph_text">
-                    <p>A long time ago in a world not very far away... I was a pre-med biochemistry student and joined the professional chemistry fraternity. Finding opportunities as a CS major, I grew social media and web engagement by 125% by redesigning the website and creating graphics to market semester recruitment as PR Chair. I'll be continuing as PD Chair this upcoming year.</p>
-                </div>
-            </div>
-            <!-- resident assistant -->
-            <div class="about_com_card" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <div class="about_com_card_info">
-                    <h3><b>Resident Assistant</b></h3>
+                    <p>Climbing is not the goal; it's the journey — and it's that journey, that story that creates meaning in the products I build.</p>
                     <br>
-                    <h5><a href="https://www.bu.edu/reslife/" target="_blank">BU Residence Life</a> | June 2020 - Present</h5>
-                </div>
-                <div class="about_com_card_info paragraph_text">
-                    <p>There's something about being an RA for an entire brownstone apartment building. Is it the independence? Is it the kitchen? Is it the overseeing of my residents? I think it's all of the above! As an RA, I look after roughly 30 residents as well as host events and conduct on-call shifts for the Lower Bay State Road neighborhood.</p>
-                </div>
-            </div>
-            <!-- kilachand peer mentor -->
-            <div class="about_com_card" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-                <div class="about_com_card_info">
-                    <h3><b>Peer Mentor</b></h3>
+                    <p>When it comes to brands, especially start-ups, I know what it's like to be stuck in a design loop. From web designs to mobile mockups, grayscale drawings to full-scale launches, every brand has a journey. What's yours?</p>
                     <br>
-                    <h5><a href="https://www.bu.edu/khc/" target="_blank">Kilachand Honors College</a> | August 2019 - May 2021</h5>
-                </div>
-                <div class="about_com_card_info paragraph_text">
-                    <p>Giving back to my community has always been a knack of mine, and what better way to help KHC freshmen than to serve as a role model and as a guide to navigate the first year of college.</p>
+                    <a href="mailto:andyvo@bu.edu"><p class="highlight"><b>Let's climb together.</b></p></a>
                 </div>
             </div>
-        </section>
-
-        <section class="about_community">
-            <h2 class="about_com_header">Outside Class 📸</h2>
-            <div class="about_img_section">
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/bobaselftimer.JPG" alt="Andy Vo drinking boba">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/fencedsunset.JPG" alt="Sunset of Boston behind a fence">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/ramenforthegram.JPG" alt="Chopsticks holding ramen for Andy's food instagram">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/500boylston.JPG" alt="500 Boylston Street">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/andyvomarilynmonroe.JPG" alt="Andy Vo and Marilyn Monroe">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/metree.jpg" alt="Andy Vo portrait picture">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/baystatewinter.JPG" alt="Bay State Road in the winter">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/andyvovaccniated.JPG" alt="Andy Vo vaccinated">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/beaconstreettracks.JPG" alt="Beacon Street Green Line in the winter">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/bikeandtree.JPG" alt="Andy's bike in front of a blossoming tree">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/climbingtree.jpg" alt="Andy Vo climbing an apple tree">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/bobabrick.JPG" alt="Brown sugar boba tea in front of brick wall">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/greenline.JPG" alt="Green line at Boston University going into the sunset">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/guitarbw.jpg" alt="Andy Vo playing guitar">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/gyroatgreco.JPG" alt="A gyro at GreCo on Newbury">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/heelclick.jpg" alt="Andy Vo heelclicking on a trail">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/andyvobiking.JPG" alt="Andy Vo biking in Cambridge">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/hancocktower.JPG" alt="John Hancock Tower reflecting another building">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/topdownplates.jpg" alt="Andy Vo taking pictures for his topdownplates food instagram">
-                </div>
-                <div class="about_img_indiv">
-                    <img src="/images/pics for website/norollerblading.JPG" alt="Andy Vo rollerblading with a norollerblading sign">
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <!-- SOCIALS for the people!
-             email: andyvo@bu.edu
-             github: andyyvo
-             linkedin: andyyvo
-             insta: theandyvo -->
-        <div class="copyright">
-            <h4>Let's have a coffee chat ☕</h4>
-            <div class="socials">
-                <a href="mailto:andyvo@bu.edu" class="social_link mail" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/andyyvo/" class="social_link github"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/andyyvo/" class="social_link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/theandyvo/" class="social_link insta" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="bottomfooter">
+            <h5><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</h5>
+            <div class="socialicons">
+                <a class="social_link" href="mailto:andyvo@bu.edu">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="social_link" href="https://github.com/andyyvo/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social_link" href="https://www.linkedin.com/in/andyyvo/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social_link" href="https://www.instagram.com/theandyvo/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-            <!-- emoji ideas: tree, boba (not on all platforms), guitar, music, cowboy emoji, celebrate confetti popper, nerd emoji, rollerblades, lightbulb, fire -->
-            <p class="copyright_text">Designed 🎨 and coded 👨‍💻 by Andy Vo</p>
-            <p class="copyright_text"><i class="far fa-copyright"></i> 2021 Andy Vo & 🎵🎸🌲</p>
-        </div>
-        <!-- closing html tag as logo -->
-        <div class="logo">
-            <a href="/">&lt;/Andy Vo&gt;</a>
         </div>
     </footer>
 
     <script src="/static/js/script.js"></script>
+    <!-- <script src="/static/js/pages.js"></script> -->
+    <!-- <script src="/static/js/rellax.min.js"></script>
+    <script src="/static/js/rellax_script.js"></script> -->
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
