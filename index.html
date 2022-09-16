@@ -1,45 +1,95 @@
 <!DOCTYPE HTML>  
-<html>  
-    <header>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="table_style.css">
-        <title>My Webpage Title</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Vo — INFO 202</title>
+    <meta name="description" content="Andy Vo is a Software Engineering Intern at Red Hat and a Master's of Information Management and Systems Candidate at University of California, Berkeley who is passionate about designing experiences that bring users together through storytelling.">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199547569-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-199547569-1');
+    </script>
+    <!-- facebook tags -->
+    <meta property="og:title" content="Andy Vo">
+    <meta property="og:description" content="Andy Vo is a Software Engineering Intern at Red Hat and a Master's of Information Management and Systems Candidate at University of California, Berkeley who is passionate about designing experiences that bring users together through storytelling.">
+    <meta property="og:url" content="https://andyvo.com/">
+    <meta property="og:type" content="website">
+    <!-- twitter tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Andy Vo">
+    <meta property="twitter:description" content="Andy Vo is a Software Engineering Intern at Red Hat and a Master's of Information Management and Systems Candidate at University of California, Berkeley who is passionate about designing experiences that bring users together through storytelling.">
+    <!-- for mobile themes i think -->
+    <meta name="theme-color" content="#2A2A2A">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <!-- favicon stuffs -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/andyvo_new_logo_alt.png">
+    <link rel="apple-touch-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
+    <link rel="mask-icon" type="image/png" href="/images/andyvo_new_logo_alt.png">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="table_style.css">
+  </head>
+  <body>  
+    <!---AVO navigation--->
+    <nav class="navigate">
+      <div class="navigate-container">
+        <div class="navigate-1">
+          <a href="/">
+            <img src="/images/full_logo_dark.svg" alt="Andy Vo logo">
+          </a>
+        </div>
+        <div class="navigate-2">
+          <a class="text-navy" href="#about-me">About Me</a>
+          <a class="text-navy" href="/list.html"><button class="button-navigate">List Data</button></a>
+        </div>
+      </div>
+    </nav>
+    <!-- AVO hero section -->
+    <header class="section-80" id="hero">
+      <div class="section-container">
+        <div class="section-content two-col-content">
+          <div class="section-left section-text content-3">
+            <h1 class="text-h1 text-caps text-navy">Andy Vo</h1>
+            <h3 class="text-h3 text-navy">A front-end software engineer bringing experiences to life through accessible design and storytelling.</h3>
+            <a href="/list.html"><button class="button-main">My Spotify List</button></a>
+          </div>
+          <div class="section-right section-img">
+            <video src="/images/avo-doing-stuff.mp4" type="video/mp4" autoplay loop muted preload></video>
+          </div>
+        </div>
+      </div>
     </header>
-    <body>  
-        <!---Navigation--->
-        <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <!--This code defines the "My Webpage" link in the top left corner of the navigation pane-->
-                <a class="navbar-brand" href="./index.html">My Webpage</a>
-                <!--This code defines the "List" link in the top right corner of the navigation pane-->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html">List</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!--This section defines the middle section of the webpage-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                
-                <!-- This code is for the student name-->
-                <h1 class="masthead-heading text-uppercase mb-0">Test Student</h1>
-                <!--This code creates the two lines separating the student name from the subtitle-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!--This code creates the subheading underneath the line dividers-->
-                <p class="masthead-subheading font-weight-light mb-0">School of Information Student</p>
-            </div>
-        </header>
-        <section class="text-center">
-
-            <div class="col-md-6 col-lg-4 mb-5">
-                <!-- put your bio paragraph here; remember to use the correct html tags -->
-                
-            </div>
-        </section>
-    </body>
-
+    <!-- AVO bio section -->
+    <section class="section-100" id="about-me">
+      <div class="section-container">
+        <div class="section-content two-col-content">
+          <div class="section-left section-img">
+            <img src="/images/andyvo-pic.JPG" alt="Andy Vo in San Francisco">
+          </div>
+          <div class="section-right section-text content-3">
+            <h2 class="text-h2 text-caps text-navy">Hello there!</h2>
+            <h4 class="text-h4 text-navy">I'm a first-generation interdisciplinary software engineer exploring data, accessibility, and interaction at <a class="hyperlink" href="https://www.ischool.berkeley.edu/programs/mims" target="_blank">UC Berkeley's Master's of Information Management & Systems</a> program. Currently, I work at <a class="hyperlink" href="https://www.redhat.com/en" target="_blank">Red Hat</a> on the UXD Team developing React features for the PatternFly Design System. Find me climbing trees 🌲, hiking mountains ⛰️, playing guitar 🎸, dancing randomly 🕺, and cooking food 🍜 among other things outside of class.</h4>
+            <a href="https://andyvo.com/" target="_blank"><button class="button-main">My Portfolio</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2022 Andy Vo</p>
+    </footer>
+  </body>
 </html>

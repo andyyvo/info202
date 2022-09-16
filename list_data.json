@@ -1,22 +1,70 @@
 {
-	"movies": [
+	"songs": [
 		{
-			"Title": "Lost In Translation",
-			"Director": "Sofia Coppola",
-			"Rating": "R",
-			"Year": "2003"
+			"Name": "Intro",
+			"Artist": "The xx",
+			"Duration": "2:07",
+			"Release Date": "2009-08-18"
 		},
 		{
-			"Title": "Casino Royale",
-			"Director": "Martin Campbell",
-			"Rating": "PG-13",
-			"Year": "2006"
+			"Name": "La La Lost You - Acoustic Version",
+			"Artist": "NIKI, 88rising",
+			"Duration": "3:28",
+			"Release Date": "2019-08-11"
 		},
 		{
-			"Title": "The Dark Knight",
-			"Director": "Christopher Nolan",
-			"Rating": "PG-13",
-			"Year": "2008"
+			"Name": "Oceans & Engines",
+			"Artist": "NIKI",
+			"Duration": "5:36",
+			"Release Date": "2022-07-08"
+		},
+		{
+			"Name": "Weight of a Whisper",
+			"Artist": "Masayoshi Soken",
+			"Duration": "1:40",
+			"Release Date": "2014-03-26"
+		},
+		{
+			"Name": "Daphne Blue (Acoustic)",
+			"Artist": "The Band CAMINO",
+			"Duration": "3:10",
+			"Release Date": "2019-12-13"
+		},
+		{
+			"Name": "Higher",
+			"Artist": "Blanks",
+			"Duration": "3:09",
+			"Release Date": "2019-08-09"
+		},
+		{
+			"Name": "Way It Goes",
+			"Artist": "Hippo Campus",
+			"Duration": "4:05",
+			"Release Date": "2017-02-24"
+		},
+		{
+			"Name": "Sunflower - Spider-Man: Into the Spider-Verse",
+			"Artist": "Post Malone, Swae Lee",
+			"Duration": "2:38",
+			"Release Date": "2018-12-14"
+		},
+		{
+			"Name": "Every Summertime",
+			"Artist": "NIKI",
+			"Duration": "3:35",
+			"Release Date": "2021-09-03"
+		},
+		{
+			"Name": "Under the Weight",
+			"Artist": "Masayoshi Soken",
+			"Duration": "11:34",
+			"Release Date": "2014-03-26"
+		},
+		{
+			"Name": "Higher",
+			"Artist": "Blanks",
+			"Duration": "3:09",
+			"Release Date": "2019-08-09"
 		}
 	]
 }
